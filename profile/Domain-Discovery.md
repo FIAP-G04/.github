@@ -2,6 +2,10 @@
 Está seção ....
 
 ## Visão geral do problema
+<p align="center">
+  <img width="100%" src="https://github.com/FIAP-G04/.github/blob/main/images/byte-burguer.png" alt="Byte Burguer">
+</p>
+
 A lanchonete de bairro Byte Burguer, que inicialmente se destacou pelo sucesso, agora enfrenta uma série de desafios operacionais devido à falta de automação e sistemas essenciais para o atendimento ao cliente e a gestão do negócio. 
 
 Primeiramente, a lanchonete Byte Burguer enfrenta dificuldades significativas devido à falta de um sistema de gerenciamento de pedidos. A anotação manual de pedidos e sua comunicação à cozinha são propensas a erros e confusão. Isso resulta em atrasos na preparação e na entrega dos pedidos, bem como na possibilidade de pedidos serem perdidos ou mal interpretados. A insatisfação dos clientes devido a pedidos incorretos prejudica a reputação do estabelecimento e causa prejuízos financeiros.
