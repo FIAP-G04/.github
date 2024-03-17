@@ -38,7 +38,7 @@ A falta de um sistema de cadastramento de clientes impede que a lanchonete colet
 
 Outro desafio é a ausência de um cardápio digital acessível de qualquer lugar. A falta dessa facilidade impede que os clientes naveguem pelos itens do cardápio, façam escolhas e até mesmo pré-encomendem refeições antes de chegarem à lanchonete.
 
-Por fim, a lanchonete enfrenta o de-safio de não possuir um sistema para coletar avaliações de clientes e reclama-ções. A ausência de um mecanismo para feedback do cliente dificulta a avaliação da satisfação do cliente e a resolução de problemas em tempo hábil.
+Por fim, a lanchonete enfrenta o desafio de não possuir um sistema para coletar avaliações de clientes e reclamações. A ausência de um mecanismo para feedback do cliente dificulta a avaliação da satisfação do cliente e a resolução de problemas em tempo hábil.
 
 Em resumo, a lanchonete está enfrentando uma série de desafios operacionais devido à falta de sistemas de automação e gestão. Para garantir o sucesso contínuo do negócio, é essencial investir em sistemas de gerenciamento de pedidos, sistemas de autoatendimento, sistemas de controle de estoque, sistemas de cadastramento de clientes e análise de dados, cardápio digital e sistemas de avaliação da experiência do cliente. Essas melhorias não apenas aumentarão a eficiência operacional, mas também proporcionarão uma experiência aprimorada para os clientes e oportunidades de crescimento para a lanchonete.
 
@@ -99,7 +99,7 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
 </p>
 
 #### Preparação e Retirada do Pedido
- Esse contexto abrange todo o processo, desde o momento em que o pedido é re-cebido na cozinha, passando pela sua preparação e chegando até a retirada pelo cliente. Abaixo, apresentam-se algumas premissas e observações relacionadas a esse cenário:
+ Esse contexto abrange todo o processo, desde o momento em que o pedido é recebido na cozinha, passando pela sua preparação e chegando até a retirada pelo cliente. Abaixo, apresentam-se algumas premissas e observações relacionadas a esse cenário:
 
 - **Premissas:**
   - O atendente da cozinha só disponibiliza um item do pedido ao atendente de entrega quando está pronto;
