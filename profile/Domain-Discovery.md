@@ -80,12 +80,26 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
 </p>
 
 ## Mapeamento de Domínios e Subdomínios
+Um domínio se refere a uma esfera de conhecimento ou atividade no mundo real que abrange um espaço de problema específico. Esse domínio possui sua própria linguagem, conceitos, regras e práticas que o tornam únicos. No contexto do Tech Challenge o nosso domínio é uma Lanchonete Fast Food.
 
+Por outro lado, um subdomínio é uma subdivisão ou área menor de conhecimento ou atividade dentro de um domínio mais amplo. Os subdomínios representam uma granularização desse espaço de problema e podem se concentrar em tópicos ou aspectos específicos dentro do domínio principal. Isso ajuda a organizar e categorizar o conhecimento de forma mais detalhada e específica. Desta forma, entendemos que o Domínio da Lanchonete Fast Food possui os seguintes subdomínios:
 
 <p align="center">
   <img width="90%" src="https://github.com/FIAP-G04/.github/blob/main/images/subdominios-as-is.png" alt="Subdomínios AS-IS">
 </p>
 
+### Core Domains
+Os domínios principais (Core Domains) são aqueles que estão no cerne do negócio e geralmente são os mais complexos e específicos, dos quais temos Gestão de Cardápio e Gerenciamento de Pedidos.
+
+- **Gestão de Cardápio:** Responsável por definir os produtos oferecidos na lanchonete fast food, além de seus preços, ingredientes, categorias, promoções e variações. Faz parte do Core Domain, visto que é de extrema importância para o funcionamento eficiente da lanchonete.
+
+- **Gerenciamento de Pedidos:** Este subdomínio lida com a criação, preparação, acompanhamento, montagem e retirada dos pedidos dos clientes. Este é um **Core Domain**, pois lida diretamente com a funcionalidade central do negócio, ou seja, a criação e gestão de pedidos dos clientes. Devido a sua complexidade, poderíamos subdivídi-lo em 3 subdomínios: 
+
+  - **Solicitação do Pedido:** Compreende o conjunto de etapas envolvidas na criação de um pedido, no qual o cliente faz sua solicitação ao atendente de caixa.
+    
+  - **Preparação do Pedido:** É todo o processo de preparação dos itens do pedido pelos atendentes de cozinha.
+    
+  - **Montagem & Retirada do Pedido:** Refere-se ao procedimento que inclui a mon-tagem dos itens do pedido por parte do atendente de entrega e a subsequente retirada do pedido pelo cliente.
 
 ## Análise de Subdomínios no cenário TO-BE
 
