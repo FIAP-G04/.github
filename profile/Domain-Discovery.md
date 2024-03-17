@@ -63,11 +63,22 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
   - O lanche, acompanhamento, bebida e sobremesa são opcionais no combo;
  
 <p align="center">
-  <img style="width:98%" src="https://github.com/FIAP-G04/.github/blob/main/images/realizar-pedido-as-is.png" alt="Nosso Grupo">
+  <img style="width:98%" src="xxx.png" alt="Realizar um Pedido">
 </p>
 
+#### Preparação e Retirada do Pedido
+ Esse contexto abrange todo o processo, desde o momento em que o pedido é re-cebido na cozinha, passando pela sua preparação e chegando até a retirada pelo cliente. Abaixo, apresentam-se algumas premissas e observações relacionadas a esse cenário:
 
-.
+- Premissas:
+  - O atendente da cozinha só disponibiliza um item do pedido ao atendente de entrega quando está pronto;
+  - Cada pedido da fila é atendido de maneira sequencial;
+  - O atendente de entrega só avisa o cliente quando todos os itens do pedido estão prontos;
+  - O cliente retirará o pedido quando for avisado;
+
+<p align="center">
+  <img style="width:98%" src="xxx.png" alt="Preparação e Retirada do Pedido">
+</p>
+
 ## Mapeamento de Domínios e Subdomínios
 
 
