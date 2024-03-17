@@ -6,7 +6,7 @@ Os repositórios desta organização têm como objetivo principal o desenvolvime
 </p>
 
 ## Domain Discovery
-- [Visão geral do problema](#)
+- [Visão geral do problema](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#vis%C3%A3o-geral-do-problema)
 - [Análise do cenário atual (AS-IS)](#)
 - [Visão do Domain Expert](#)
 - [Decomposição da visão do Domain Expert](#)
