@@ -228,7 +228,7 @@ Este módulo permite que os clientes efetuem seus pedidos, personalizem seus com
 - Pré-visualização do resumo do pedido antes de confirmar a compra.
 - Realização do pagamento por meio de um QRCode.
 - Emissão de um código para retirada do pedido.
-- 
+  
  A seguir, ilustraremos através da abordagem **Domain Storytelling**, uma demonstração do processo de realização de um pedido. Para este cenário, utilizaremos as seguintes premissas e observações para detalhar o cenário:
 
 - **Premissas:**
@@ -243,5 +243,32 @@ Este módulo permite que os clientes efetuem seus pedidos, personalizem seus com
 
 ## Dicionário de Linguagem Ubíqua
 
+
+| Termos | Definição |
+|--------|-----------|
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 ## Event Storming
