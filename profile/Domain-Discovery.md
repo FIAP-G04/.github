@@ -1,23 +1,25 @@
 # Domain Discovery 💡
 
-- [Visão Geral do Problema](#)
-- [Análise do Cenário Atual (AS-IS)](#)
-- [Decomposição da Visão do Domain Expert](#)
-  - [Atores](#)
-  - [Cenários](#)
-    - [Realizar um Pedido](#)
-    - [Preparação e Retirada do Pedido](#)
-    - [Revisar Informações do Cardápio](#) 
-- [Mapeamento de Domínios e Subdomínios](#)
-  - [Core Domains](#)
-  - [Supporting Domains](#)
-  - [Generic Domains](#)
-- [Análise de Subdomínios no Cenário TO-BE](#)
-- [Análise Estratégica dos Subdomínios](#)
-- [Visão Geral da Solução](#)
-  - [Módulo de Autoatendimento](#)
-- [Dicionário de Linguagem Ubíqua](#)
-
+- [Visão Geral do Problema](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#vis%C3%A3o-geral-do-problema)
+- [Análise do Cenário Atual (AS-IS)](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#an%C3%A1lise-do-cen%C3%A1rio-atual-as-is)
+- [Decomposição da Visão do Domain Expert](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#decomposi%C3%A7%C3%A3o-da-vis%C3%A3o-do-domain-expert)
+  - [Atores](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#atores)
+  - [Cenários](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#cen%C3%A1rios)
+    - [Realizar um Pedido](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#realizar-um-pedido)
+    - [Preparação e Retirada do Pedido](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#prepara%C3%A7%C3%A3o-e-retirada-do-pedido)
+    - [Revisar Informações do Cardápio](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#revisar-informa%C3%A7%C3%B5es-do-card%C3%A1pio) 
+- [Mapeamento de Domínios e Subdomínios](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#mapeamento-de-dom%C3%ADnios-e-subdom%C3%ADnios)
+  - [Core Domains](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#core-domains)
+  - [Supporting Domains](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#supporting-domains)
+  - [Generic Domains](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#generic-domains)
+- [Análise de Subdomínios no Cenário TO-BE](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#an%C3%A1lise-de-subdom%C3%ADnios-no-cen%C3%A1rio-to-be)
+- [Análise Estratégica dos Subdomínios](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#an%C3%A1lise-estrat%C3%A9gica-dos-subdom%C3%ADnios)
+- [Visão Geral da Solução](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#vis%C3%A3o-geral-da-solu%C3%A7%C3%A3o)
+  - [Módulo de Autoatendimento](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#m%C3%B3dulo-de-autoatendimento)
+  - [Módulo de Acompanhamento de Pedido](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#m%C3%B3dulo-de-acompanhamento-de-pedido)
+  - [Módulo de Gestão de Cardápio](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#m%C3%B3dulo-de-gest%C3%A3o-de-card%C3%A1pio)
+- [Dicionário de Linguagem Ubíqua](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#dicion%C3%A1rio-de-linguagem-ub%C3%ADqua)
+- [Event Storming](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#event-storming)
 
 ## Visão Geral do Problema
 <p align="center">
@@ -279,7 +281,7 @@ Visando atender a necessidade de facilitar a gestão das informações do catál
   - Apenas pessoas com o perfil de gerente podem acessar essa funcionalidade
 
 <p align="center">
-  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/revisar-informacoes-do-cardapio-to-be.png" alt="Gestão de Cardápio TO-BE">
+  <img width="65%" src="https://github.com/FIAP-G04/.github/blob/main/images/revisar-informacoes-do-cardapio-to-be.png" alt="Gestão de Cardápio TO-BE">
 </p>
 
 ## Dicionário de Linguagem Ubíqua
