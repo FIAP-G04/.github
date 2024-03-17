@@ -246,29 +246,30 @@ Este módulo permite que os clientes efetuem seus pedidos, personalizem seus com
 
 | Termos | Definição |
 |--------|-----------|
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Totem de Autoatendimento | Uma estação eletrônica na lanchonete onde os clientes podem fazer seus pedidos e efetuar o pagamento sem a necessidade de interagir com um atendente. |
+| Cardápio Digital | Uma tela sensível ao toque no totem de autoatendimento que exibe as opções de menu e permite aos clientes selecionar os itens desejados. |
+| Lanche Principal | O lanche principal é o prato principal da refeição como sanduíches e hambúrgueres. Podem haver opções de carne, frango e vegetarianas ou veganas, como hambúrgueres de legumes.  |
+| Acompanhamentos | Os acompanhamentos são alimentos que complementam o lanche principal. Os acompanhamentos típicos incluem batatas fritas, onion rings, nuggets de frango, saladas entre outros. Os clientes podem escolher entre diferentes acompanhamentos para criar uma refeição personalizada. |
+| Bebidas | As bebidas são líquidos que acompanham a refeição como: refrigerantes, água, chá gelado e sucos. |
+| Sobremesa | As sobremesas são itens doces que os clientes podem adicionar à sua refeição ou desfrutar após o lanche principal. Disponibilizamos Sobremesas como: sorvetes, tortas, cookies, brownies e milkshakes. |
+| Combo | Uma refeição que inclui lanche principal, acompanhamento, bebida e sobremesa não sendo obrigatório nenhum deles. |
+| QR Code | Um código de barras bidimensional que pode ser escaneado com um smartphone para realizar o pagamento do pedido. |
+| Código de Retirada | É um código de 6 dígitos alfanuméricos que deve ser apresentado para retirar o pedido. |
+| Código do Pedido | É um código sequencial utilizado pelos clientes para acompanhamento do status do pedido. |
+| Carrinho de Compras | O carrinho de compras é uma representação virtual que contém os itens selecionados pelo cliente para compra. Ele é usado para revisar e confirmar os itens antes de prosseguir para o pagamento |
+| Checkout | O checkout é a etapa final do processo de compra, onde o cliente confirma os itens em seu carrinho de compras, fornece informações de pagamento e finaliza o pedido. É o momento em que a transação é concluída e o cliente se prepara para receber os produtos ou refeições. |
+| Pedido | Um pedido refere-se à seleção de itens feita pelo cliente no cardápio da  lanchonete. Isso pode incluir lanches principais, bebidas, acompanhamentos e sobremesas.  |
+| Pagamento | O pagamento é a ação de quitar o valor total do pedido. Atualmente os clientes podem pagar com QR Code. |
+| Pedido Aguardando Pagamento | Esta é a fase inicial após a seleção dos itens do cardápio e a adição ao carrinho de compras. O pedido aguardando pagamento indica que o cliente ainda não efetuou o pagamento, e a transação não foi concluída. Os itens ainda não foram preparados. |
+| Pedido Confirmado | Após o pagamento bem sucedido, o pedido é confirmado. Isso significa que a lanchonete recebeu o pagamento e encaminhou para a fila de atendimento da cozinha. |
+| Pedido em Preparação | Nesta fase, a lanchonete está ocupada preparando os itens do pedido. Os alimentos estão sendo cozidos, montados e embalados para atender ao pedido do cliente. |
+| Pedido Pronto | Quando os itens do pedido estão todos prontos e estão disponíveis para serem retirados. |
+| Pedido Retirado | Após a notificação de que o pedido está pronto, o cliente pode retirar os itens do pedido. Isso geralmente envolve pegar a comida no balcão de retirada ou na área de retirada designada no estabelecimento. |
+| Cliente | Quem efetua um pedido na lanchonete com os itens desejados. |
+| Atendente de Caixa | Encarregado de registrar o pedido do cliente, calcular o valor total e receber o pagamento correspondente. |
+| Atendente da Cozinha | São especialistas na elaboração dos itens do pedido do cliente. Cada atendente de cozinha é designado a um grupo específico de preparação, como lanches, acompanhamentos, bebidas ou sobremesas. Sua responsabilidade inclui a preparação e disponibilização do item pronto ao atendente de entrega. |
+| Atendente de Entrega | Responsável por montar os itens do pedido em uma bandeja e gerenciar as entregas aos clientes. Após a entrega do pedido, o atendente registra a retirada de cada pedido. |
+| Gerente | Responsável por gerenciar os produtos apresentados no cardápio aos clientes. |
+| Mercado Pago | É uma plataforma de serviços financeiros e pagamentos online desenvolvida pelo Mercado Livre. |
 
 ## Event Storming
