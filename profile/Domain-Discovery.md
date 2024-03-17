@@ -19,10 +19,23 @@ Por fim, a lanchonete enfrenta o de-safio de não possuir um sistema para coleta
 Em resumo, a lanchonete está enfrentando uma série de desafios operacionais devido à falta de sistemas de automação e gestão. Para garantir o sucesso contínuo do negócio, é essencial investir em sistemas de gerenciamento de pedidos, sistemas de autoatendimento, sistemas de controle de estoque, sistemas de cadastramento de clientes e análise de dados, cardápio digital e sistemas de avaliação da experiência do cliente. Essas melhorias não apenas aumentarão a eficiência operacional, mas também proporcionarão uma experiência aprimorada para os clientes e oportunidades de crescimento para a lanchonete.
 
 ## Análise do cenário atual (AS-IS)
+Atualmente, nós disponibilizamos aos nossos clientes um cardápio dividido em 4 seções: lanches, acompanhamentos, bebidas e sobremesas. Este cardápio é apresentado em formato físico ao cliente e inclui todos os detalhes relevantes sobre os produtos, como nome, descrição, preço e imagem. A gestão dessas informações é de responsabilidade do gerente da lanchonete que as revisa mensalmente através de um arquivo word. 
 
+Quando o cliente já sabe o que deseja pedir, ele começa a fazer o seu pedido selecionando entre lanches, acompanhamentos, bebidas e sobremesas, sendo que cada categoria que compõe o pedido é opcional. 
+
+Após a seleção dos itens, o atendente do caixa registra o pedido do cliente em um papel e lhe informa em voz alta um resumo do pedido e o valor total a ser pago. Após a confirmação, o cliente efetua o pagamento do pedido e aguarda a confirmação da transação. Uma vez que o pagamento é confirmado, o atendente do caixa entrega ao cliente um comprovante de pagamento e um código que representa o número do pedido, que será usado posteriormente para a retirada, quando o mesmo estiver pronto. 
+
+Em seguida, o atendente do caixa adiciona o papel com o resumo do pedido à fila da cozinha. Cada pedido que entra na cozinha é colocado em uma fila de preparação. Na cozinha, cada categoria de produto - lanches, acompanhamentos, bebidas e sobremesas - é tratada por um profissional especializado, que, após a conclusão, entrega o produto pronto ao atendente de entrega. 
+
+O atendente de entrega é responsável por montar o pedido que será entregue ao cliente e gerenciar a retirada de cada um dos pedidos. O pedido é organizado da mesma maneira: a bebida fica no centro, o lanche de um lado e os acompanhamentos e sobremesas com o logotipo da empresa voltado para o cliente. Isso mantém o peso equilibrado e facilita o manuseio.
+
+Após a montagem do pedido, o atendente de entrega anuncia em voz alta o número do pedido que está pronto, permitindo que o cliente vá até o balcão e retire seu pedido. O cliente apresenta o código de retirada e recebe o seu pedido completo. Por sua vez, o atendente de entrega coloca o papel com o resumo do pedido em uma urna de pedidos entregues.
 
 ## Decomposição da visão do Domain Expert
+Nesta seção, através da aplicação da metodologia do Domain Storytelling, iremos ex-plorar os cenários cruciais e os atores centrais que desempenham papéis fundamentais nas narrativas compartilhadas pelo Domain Expert.
 
+### Atores
+Analisando os relatos do Domain Expert, 5 atores foram identificados na visão geral do cenário atual:
 
 ## Mapeamento de Domínios e Subdomínios
 
