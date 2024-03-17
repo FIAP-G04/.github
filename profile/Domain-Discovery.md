@@ -245,8 +245,45 @@ Este módulo permite que os clientes efetuem seus pedidos, personalizem seus com
   <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/realizar-pedido-to-be.png" alt="Realizar um Pedido TO-BE">
 </p>
 
-## Dicionário de Linguagem Ubíqua
+### Módulo de Acompanhamento de Pedido
+Este módulo é encarregado de gerenciar o ciclo de vida do pedido, desde o momento em que é recebido após a compra, passando pela etapa de preparação, até a conclusão e entrega do pedido ao cliente.
 
+O processo começa logo após a confirmação do pagamento, que, como resultado, registra o pedido como **"Recebido"** na fila da cozinha. Quando um membro da equipe de cozinha começa a preparar o pedido, o status é atualizado para **"Em Preparação"** pelo atendente de cozinha. À medida que cada item do pedido é preparado, o atendente de entrega monta o pedido na bandeja e atualiza o status para **"Pronto"** quando todos os itens do pedido estão concluídos. Como resultado, o sistema envia uma notificação para os painéis de acompanhamento do status do pedido, informando ao cliente que o pedido está pronto para ser retirado.
+
+Os painéis de acompanhamento do pedido são monitores que exibem o status de cada pedido e uma estimativa de tempo para a conclusão do pedido. Essa estimativa é calculada com base no tempo médio necessário para preparar cada produto e também na fila de pedidos na cozinha.
+
+Quando o pedido está pronto, o cliente se dirige ao balcão e apresenta o código de retirada do pedido. O atendente de entrega então entrega o pedido ao cliente e atualiza o status do pedido para **"Finalizado"**.
+
+A seguir, ilustraremos o processo de preparação e retirada de um pedido através da abordagem **Domain Storytelling**. Para este cenário, utilizaremos as seguintes premissas e observações para detalhar o cenário:
+
+- **Premissas:**
+  - O atendente da cozinha só disponibiliza o item do pedido ao atendente de entrega quando está pronto;
+  - Cada pedido da fila é atendido de maneira sequencial;
+  - O atendente de entrega só avisa o cliente quando todos os itens do pedido estão prontos;
+  - O cliente retirará o pedido quando for avisado;
+ 
+<p align="center">
+  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/preparacao-e-retirada-do-pedido-to-be.png" alt="Acompanhamento de Pedidos TO-BE">
+</p>
+
+
+### Módulo de Gestão de Cardápio
+Visando atender a necessidade de facilitar a gestão das informações do catálogo e torná-lo acessível ao cliente de qualquer lugar, propomos a criação da funcionalidade de gestão de cardápio dentro da plataforma **iBurguer**. Segue abaixo o mapeamento do **Domain Storytelling** referente a funcionalidade.
+
+- **Premissas:**
+  - O gerente já precisa estar logado no sistema.
+  - O cliente consegue visualizar o cardápio que fica pública para qualquer pessoa visualizar.
+
+- **Observações:**
+  - A ação de revisar engloba o escopo de inclusão, alteração, inativação e ativação de um produto do cardápio.
+  - Apenas pessoas com o perfil de gerente podem acessar essa funcionalidade
+
+<p align="center">
+  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/revisar-informacoes-do-cardapio-to-be.png" alt="Gestão de Cardápio TO-BE">
+</p>
+
+## Dicionário de Linguagem Ubíqua
+Segue abaixo um conjunto de palavras que compõem o dicionário de **linguagem ubíqua** ao contexto da lanchonete fast food **Byte Burguer**:
 
 | Termos | Definição |
 |--------|-----------|
