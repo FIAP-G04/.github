@@ -37,6 +37,31 @@ Nesta seção, através da aplicação da metodologia do Domain Storytelling, ir
 ### Atores
 Analisando os relatos do Domain Expert, 5 atores foram identificados na visão geral do cenário atual:
 
+<p align="center">
+  <img width="680" src="https://github.com/FIAP-G04/.github/assets/5951374/0f0a5bb4-735e-4ab6-b103-590f319eb15f" alt="Nosso Grupo">
+</p>
+
+### Cenários
+Avaliando a narrativa do **Domain Expert**, identificamos três cenários distintos que representam grande parcela do escopo do problema:
+
+- O primeiro cenário diz respeito à etapa em que o cliente faz seu pedido.
+- O segundo cenário aborda o momento em que o pedido é recebido na cozinha e posteriormente entregue ao cliente.
+- Por fim, o terceiro cenário descreve o processo de gerenciamento das infor-mações do cardápio.
+
+A seguir iremos ilustrar na abordagem **Domain Storytelling** de cada um dos cenários.
+
+#### Realizar um Pedido
+Antes de exibir a representação pictográfica da abordagem de **Domain Storytelling** para o cenário em que o cliente conclui com êxito um pedido em uma lanchonete, é necessário introduzir algumas premissas e observações referentes ao cenário em questão:
+
+- Premissas:
+  - O cliente já sabe quais produtos quer pedir;
+  - Todos os produtos escolhidos pelo cliente estão disponíveis para venda;
+  - A transação de pagamento foi bem sucedida;
+  - Não há desistência do pedido, pelo cliente, em nenhum momento;
+
+- Observações:
+  - O lanche, acompanhamento, bebida e sobremesa são opcionais no combo;
+
 ## Mapeamento de Domínios e Subdomínios
 
 
