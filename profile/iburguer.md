@@ -1,12 +1,11 @@
 # iBurguer
 - [O que é iBurguer?](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#o-que-%C3%A9-ibuguer)
-- [Funcionalidades](#)
-  - [Gestão de Cardápio](#)
-  - [Gestão de Clientes](#)
-  - [Carrinho de Compras](#)
-  - [Pagamento](#)
-  - [Gestão de Pedidos](#)
-- [Visão Geral da Arquitetura](#)
+- [Funcionalidades](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#funcionalidades)
+  - [Gestão de Cardápio](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#gest%C3%A3o-de-card%C3%A1pio)
+  - [Gestão de Clientes](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#gest%C3%A3o-de-clientes)
+  - [Carrinho de Compras](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#carrinho-de-compras)
+  - [Pagamento](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pagamento)
+  - [Gestão de Pedidos](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pedidos)
 - [Visão Geral da Arquitetura](#)
 - [Estrutura de Persistência de Dados](#)
 - [Arquitetura de Aplicação](#)
@@ -97,3 +96,17 @@ Após a confirmação do pagamento, o mesmo é enviado para a fila de pedidos. A
 ```PATCH /api/orders/{orderId}/deliver``` <br>Indica que o pedido foi recebido pelo cliente, passando o mesmo para o *status* Finalizado;
 
 ```PATCH /api/orders/{orderId}/cancel``` <br>Cancela um pedido;
+
+## Visão Geral da Arquitetura
+
+## Estrutura de Persistência de Dados
+
+## Arquitetura de Aplicação
+
+## Tecnologias Utilizadas
+
+## Considerações de Escalabilidade e Desempenho
+
+## Fluxo de Implantação e CI/CD
+
+## Infraestrutura na AWS usando Terraform
