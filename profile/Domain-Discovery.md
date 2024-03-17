@@ -49,7 +49,6 @@ Analisando os relatos do Domain Expert, 5 atores foram identificados na visão g
 | Atendente de Entrega | Responsável por montar os itens do pedido em uma bandeja e gerenciar as entregas aos clientes. Após a entrega do pedido, o atendente registra a retirada de cada pedido. |
 | Gerente | Responsável por gerenciar os produtos apresentados no cardápio aos clientes. |
 
-
 ### Cenários
 Avaliando a narrativa do **Domain Expert**, identificamos três cenários distintos que representam grande parcela do escopo do problema:
 
@@ -87,6 +86,7 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
 <p align="center">
   <img style="width:98%" src="xxx.png" alt="Preparação e Retirada do Pedido">
 </p>
+
 
 ## Mapeamento de Domínios e Subdomínios
 Um domínio se refere a uma esfera de conhecimento ou atividade no mundo real que abrange um espaço de problema específico. Esse domínio possui sua própria linguagem, conceitos, regras e práticas que o tornam únicos. No contexto do Tech Challenge o nosso domínio é uma Lanchonete Fast Food.
@@ -136,7 +136,24 @@ Os domínios genéricos **(Generic Domains)** são geralmente aqueles que não s
 
 - **Recursos Humanos:** Este subdomínio desempenha um papel fundamental na gestão da equipe que trabalha na lanchonete, assegurando que haja pessoal adequado para todas as tarefas diárias. Sua responsabilidade principal consiste em garantir que a lanchonete esteja em conformidade com todas as regulamentações trabalhistas, proporcionando um ambiente de trabalho seguro e produtivo para seus funcionários. Isso é alcançado por meio do recrutamento e capacitação de profissionais apropriados.
 
+
 ## Análise de Subdomínios no cenário TO-BE
+Na primeira parte deste documento abordamos o cenário AS-IS e os problemas existentes. Sendo mapeadas as seguintes necessidades de investimento:
+
+- Gestão de pedidos 
+- Autoatendimento
+- Controle de estoque
+- Gerenciamento de clientes 
+- Cardápio digital 
+- Feedback & Reclamações do cliente. 
+
+Diante das questões mencionadas, observamos que a necessidade de gestão de pedidos pode ser atendida por meio do subdomínio identificado no cenário atual (AS-IS) conhecido como Gerenciamento de Pedidos. No entanto, com o objetivo de satisfazer a demanda por autoatendimento e simplificar o subdomínio de **Gerenciamento de Pedidos**, decidimos dividir este em dois novos subdomínios: **Carrinho de Compra** e **Acompanhamento de Pedidos**.
+
+O **Carrinho de Compra** diz respeito ao processo em que os clientes solicitam pedidos de forma autônoma em uma lanchonete. Por sua vez, o **Acompanhamento de Pedidos** abrange todas as etapas do ciclo de vida de um pedido, incluindo recebimento, preparação e retirada por parte do cliente.
+
+No que diz respeito aos problemas de controle de estoque, cardápio digital e feedback e reclamações dos clientes, já identificamos subdomínios correspondentes no cenário atual (AS-IS), que são **Gestão de Estoque**, **Gestão de Cardápio** e **Atendimento ao Cliente**, respectivamente.
+
+Além disso, é necessário criar um novo subdomínio denominado **Gerenciamento de Clientes**, uma vez que, no cenário atual (AS-IS), não existe um meio de coletar dados dos clientes nem de acompanhar seus históricos de compras e relacionamento com a lanchonete.
 
 
 ## Análise estratégica dos Subdomínios
