@@ -170,12 +170,57 @@ No que diz respeito aos problemas de controle de estoque, cardápio digital e fe
 
 Além disso, é necessário criar um novo subdomínio denominado **Gerenciamento de Clientes**, uma vez que, no cenário atual (AS-IS), não existe um meio de coletar dados dos clientes nem de acompanhar seus históricos de compras e relacionamento com a lanchonete.
 
+Desta forma, temos os seguintes subdomínios definidos no cenário TO-BE:
+
+<p align="center">
+  <img width="90%" src="https://github.com/FIAP-G04/.github/blob/main/images/subdominios-to-be.png" alt="Subdomínios TO-BE">
+</p>
 
 ## Análise estratégica dos Subdomínios
+Dado o cenário TO-BE dos novos subdomínios e as necessidades mapeadas no contexto do problema, podemos analisar de forma estratégica qual a melhor abordagem para solucionar cada uma das necessidades. Essas estratégias vão desde o desenvolvimento de soluções própria e personalizadas até a contratação de serviços ou aquisição de softwares de terceiros.
 
+Para esta análise, iremos abordar apenas os subdomínios envolvidos nas necessidades mencionadas no contexto do problema. Iremos considerar 2 aspectos: **Complexidade do Modelo** e **Diferenciação para o negócio**.
+
+<p align="center">
+  <img width="680" src="https://github.com/FIAP-G04/.github/blob/main/images/core-domain-charts.png" alt="Core Domain Charts">
+</p>
+
+A visão acima, do **Core Domain Chart**, nos ajuda a visualizar a importância estratégica de cada subdomínio tem no modelo de negócios e permite identificarmos onde o **ROI** esperado é maior e merecem o maior foco. Desta forma, podemos concluir que:
+
+O subdomínio **Pagamento** é caracterizado por uma complexidade significativa, mas que oferece um valor de diferenciação relativamente baixo para o negócio, o que nos leva a concluir que a utilização de um serviço de terceiros é a opção mais recomendada, como por exemplo: **Mercado Pago**. 
+
+O subdomínio de **Atendimento ao Cliente** está situado no quadrante de baixa complexidade, mas também apresenta baixa diferenciação de valor para o negócio. Temas como feedback, reclamações e satisfação do cliente são considerados elementos comuns em todos os tipos de negócios, o que nos leva a sugerir a adoção de soluções prontas disponíveis no mercado.
+
+A **Gestão de Estoque**, por sua vez, apresenta uma complexidade de nível intermediário, uma vez que é desafiador medir com precisão a alocação de ingredientes em cada um dos pedidos, tornando o desenvolvimento dessa solução um pouco mais complicada. Entretanto existe um valor razoável de diferenciação ao negócio, visto que a existência de um sistema desses possibilitaria a redução de desperdício financeiro para o Byte Burguer. Desta forma, poderíamos implementar uma solução customizada para atender esta necessidade, porém consideramos que a mesma teria menos prioridade de investimento que as demais.
+
+Por outro lado, o subdomínio **Gerenciamento de Clientes** ofereceria benefícios substanciais para o negócio, uma vez que o conhecimento aprofundado dos clientes permitiria a criação de campanhas personalizadas e o fornecimento de atendimento personalizado. A coleta de dados de consumo dos clientes poderia gerar inúmeros insights valiosos para o negócio. Dado seu caráter de baixa complexidade e alto potencial de ganhos, é altamente recomendável investir em uma solução para o gerenciamento de clientes.
+
+Já os subdomínios **Gestão de Cardápio**, **Carrinho de Compras** e **Acompanhamento de Pedidos** possuem complexidades diferentes, mas todos possuem alto valor de diferenciação para o negócio. Tal fato nos leva a recomendar investimento prioritário em soluções customizadas que atendam essas necessidades.
 
 ## Visão geral da solução
+Nesta seção, apresentaremos uma visão geral da solução proposta para atender às necessidades descritas na primeira parte deste documento. Aqui, exploraremos em detalhes cada um dos componentes que constituem a plataforma **iBurguer**. 
 
+Este módulo permite que os clientes efetuem seus pedidos, personalizem seus combos e efetuem o pagamento sem a necessidade de interação direta com um atendente de caixa. Inicialmente, um totem de autoatendimento será disponibilizado dentro da lanchonete para que os clientes possam interagir diretamente com a plataforma **iBurguer**. No entanto, futuramente, também será lançado um aplicativo móvel e uma página web que permitirá aos clientes fazerem seus pedidos diretamente por meio de seus smartphones. Este módulo oferece as seguintes funcionalidades:
+
+- Listagem dos itens do cardápio;
+- Pesquisar itens do cardápio por categoria.
+- Visualizar informações detalhadas dos itens no cardápio, incluindo nome, descrição, preço e fotos.
+- Adicionar itens do cardápio ao carrinho de compras, com a opção de selecionar a quantidade desejada.
+- Pré-visualização do resumo do pedido antes de confirmar a compra.
+- Realização do pagamento por meio de um QRCode.
+- Emissão de um código para retirada do pedido.
+- 
+ A seguir, ilustraremos através da abordagem **Domain Storytelling**, uma demonstração do processo de realização de um pedido. Para este cenário, utilizaremos as seguintes premissas e observações para detalhar o cenário:
+
+- **Premissas:**
+  - Nenhum problema ocorreu na geração do QRCode com o Mercado Pago;
+  - A transação de pagamento foi bem sucedida;
+  - Não há desistência do pedido pelo cliente em nenhum momento;
+
+- **Observações:**
+  - O lanche, acompanhamento, bebida e sobremesa são opcionais no combo;
+  - Se o cliente optar por não se identificar, ele tem a opção de pular a etapa de identificação e acessar o sistema como anônimo.
+  - Apenas pessoas com o perfil de gerente podem acessar essa funcionalidade
 
 ## Dicionário de linguagem ubíqua
 
