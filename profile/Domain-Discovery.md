@@ -84,7 +84,7 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
   - O cliente retirará o pedido quando for avisado;
 
 <p align="center">
-  <img style="width:98%" src="xxx.png" alt="Preparação e Retirada do Pedido">
+  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/preparacao-e-retirada-do-pedido-as-is.png" alt="Preparação e Retirada do Pedido">
 </p>
 
 #### Revisar Informações do Cardápio
@@ -95,7 +95,7 @@ Esse cenário se desenha devido à necessidade de atualização dos produtos dis
   - O cardápio é disponibilizado através de cópias impressas acessíveis aos clientes que estão dentro da lanchonete.
 
 <p align="center">
-  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/revisar-informacoes-do-cardapio-as-is.png" alt="Nosso Grupo">
+  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/revisar-informacoes-do-cardapio-as-is.png" alt="Revisar Informações do Cardápio">
 </p>
 
 
