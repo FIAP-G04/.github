@@ -61,13 +61,13 @@ A seguir iremos ilustrar na abordagem **Domain Storytelling** de cada um dos cen
 #### Realizar um Pedido
 Antes de exibir a representação pictográfica da abordagem de **Domain Storytelling** para o cenário em que o cliente conclui com êxito um pedido em uma lanchonete, é necessário introduzir algumas premissas e observações referentes ao cenário em questão:
 
-- Premissas:
+- **Premissas:**
   - O cliente já sabe quais produtos quer pedir;
   - Todos os produtos escolhidos pelo cliente estão disponíveis para venda;
   - A transação de pagamento foi bem sucedida;
   - Não há desistência do pedido, pelo cliente, em nenhum momento;
 
-- Observações:
+- **Observações:**
   - O lanche, acompanhamento, bebida e sobremesa são opcionais no combo;
  
 <p align="center">
@@ -77,7 +77,7 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
 #### Preparação e Retirada do Pedido
  Esse contexto abrange todo o processo, desde o momento em que o pedido é re-cebido na cozinha, passando pela sua preparação e chegando até a retirada pelo cliente. Abaixo, apresentam-se algumas premissas e observações relacionadas a esse cenário:
 
-- Premissas:
+- **Premissas:**
   - O atendente da cozinha só disponibiliza um item do pedido ao atendente de entrega quando está pronto;
   - Cada pedido da fila é atendido de maneira sequencial;
   - O atendente de entrega só avisa o cliente quando todos os itens do pedido estão prontos;
@@ -85,6 +85,17 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
 
 <p align="center">
   <img style="width:98%" src="xxx.png" alt="Preparação e Retirada do Pedido">
+</p>
+
+#### Revisar Informações do Cardápio
+Esse cenário se desenha devido à necessidade de atualização dos produtos disponíveis e das informações apresentadas aos clientes, incluindo elementos como nome, descrição, preço e imagens. A seguir, ressaltamos algumas premissas e considerações relacionadas a essa situação:
+
+- **Premissas:**
+  - O cardápio digital é um simples documento editável que possibilita o gerente alterar as informações dos produtos.
+  - O cardápio é disponibilizado através de cópias impressas acessíveis aos clientes que estão dentro da lanchonete.
+
+<p align="center">
+  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/revisar-informacoes-do-cardapio-as-is.png" alt="Nosso Grupo">
 </p>
 
 
