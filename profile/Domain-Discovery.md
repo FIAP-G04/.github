@@ -82,6 +82,11 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
 ## Mapeamento de Domínios e Subdomínios
 
 
+<p align="center">
+  <img width="90%" src="https://github.com/FIAP-G04/.github/blob/main/images/subdominios-as-is.png" alt="Subdomínios AS-IS">
+</p>
+
+
 ## Análise de Subdomínios no cenário TO-BE
 
 
