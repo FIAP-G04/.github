@@ -98,7 +98,7 @@ Por outro lado, um subdomínio é uma subdivisão ou área menor de conhecimento
 </p>
 
 ### Core Domains
-Os domínios principais (Core Domains) são aqueles que estão no cerne do negócio e geralmente são os mais complexos e específicos, dos quais temos Gestão de Cardápio e Gerenciamento de Pedidos.
+Os domínios principais **(Core Domains)** são aqueles que estão no cerne do negócio e geralmente são os mais complexos e específicos, dos quais temos **Gestão de Cardápio** e **Gerenciamento de Pedidos**.
 
 - **Gestão de Cardápio:** Responsável por definir os produtos oferecidos na lanchonete fast food, além de seus preços, ingredientes, categorias, promoções e variações. Faz parte do Core Domain, visto que é de extrema importância para o funcionamento eficiente da lanchonete.
 
@@ -109,6 +109,32 @@ Os domínios principais (Core Domains) são aqueles que estão no cerne do negó
   - **Preparação do Pedido:** É todo o processo de preparação dos itens do pedido pelos atendentes de cozinha.
     
   - **Montagem & Retirada do Pedido:** Refere-se ao procedimento que inclui a mon-tagem dos itens do pedido por parte do atendente de entrega e a subsequente retirada do pedido pelo cliente.
+
+### Supporting Domains
+
+Os domínios de suporte **(Supporting Domains)** são aqueles que oferecem suporte direto às operações principais do negócio, mas não são a parte central do mesmo. Eles ajudam a impulsionar as vendas, a atrair clientes ou simplesmente garantir o funcionamento dos Core Domains. Considerando o contexto da lanchonete fast food, temos 2 subdomínios: **Gestão de Estoque** e **Marketing & Promoções**.
+
+- **Gestão de Estoque:** Gerencia o estoque de ingredientes, as quantidades disponíveis e as encomendas de ingredientes. Embora seja um domínio importante, ele está mais voltado para dar suporte às operações principais, como garantir que os ingredientes estejam disponíveis para os pedidos. Portanto, pode ser considerado um **Supporting Domai**n. Se fossemos detalhar esse subdomínio, provavelmente teríamos mais atores envolvidos no contexto. Além disso poderíamos subdividir esse subdomínio em **3** outros **subdomínios**:
+
+  - **Gestão de Fornecedores:** Faz referência aos mais diversos fornecedores de ingredientes utilizados pela lanchonete.
+
+  - **Controle de Estoque:** É o processo de entrada e saída de ingredientes do estoque, controlando a sua disponibilidade e quantidade existente.
+
+  - **Compra:** Refere-se ao processo de compra de ingredientes junto aos fornecedores.
+
+- **Marketing & Promoções:** Este subdomínio gerencia campanhas de marketing, promoções, cupons e programas de fidelidade. Ele é responsável por um conjunto ações que visam a atração de clientes e a maximização das vendas.
+
+### Generic Domains
+
+Os domínios genéricos **(Generic Domains)** são geralmente aqueles que não são exclusivos para o negócio e podem ser compartilhados com outros domínios de negócio. No contexto da lanchonete fast food, podemos considerar os possíveis subdomínios: **Atendimento ao Cliente**, **Pagamento**, **Financeiro** e **Recursos Humanos**.
+
+- **Atendimento ao Cliente:** Responsável pela gestão de reclamações, feedback do cliente e a satisfação do cliente, que por sua vez, são considerados aspectos comuns em todos os tipos de negócio.
+
+- **Pagamento:** Responsável pelos processos de pagamento, faturamento e transações financeiras. Embora seja de extrema importância para a lanchonete fast food, é uma funcionalidade comum a muitos tipos de negócios.
+
+- **Financeiro:** A gestão financeira tem papel fundamental para a saúde e sustentabilidade de qualquer negócio, e a lanchonete não é exceção. Através deste subdomínio, a empresa pode acompanhar seus custos, margens de lucro, impostos e outras informações financeiras críticas para tomada de decisão.
+
+- **Recursos Humanos:** Este subdomínio desempenha um papel fundamental na gestão da equipe que trabalha na lanchonete, assegurando que haja pessoal adequado para todas as tarefas diárias. Sua responsabilidade principal consiste em garantir que a lanchonete esteja em conformidade com todas as regulamentações trabalhistas, proporcionando um ambiente de trabalho seguro e produtivo para seus funcionários. Isso é alcançado por meio do recrutamento e capacitação de profissionais apropriados.
 
 ## Análise de Subdomínios no cenário TO-BE
 
