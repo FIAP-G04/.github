@@ -71,7 +71,7 @@ Antes de exibir a representação pictográfica da abordagem de **Domain Storyte
   - O lanche, acompanhamento, bebida e sobremesa são opcionais no combo;
  
 <p align="center">
-  <img style="width:98%" src="xxx.png" alt="Realizar um Pedido">
+  <img style="width:98%" src="https://github.com/FIAP-G04/.github/blob/main/images/realizar-pedido-as-is.png" alt="Realizar um Pedido">
 </p>
 
 #### Preparação e Retirada do Pedido
