@@ -16,7 +16,7 @@
 - [Análise Estratégica dos Subdomínios](#)
 - [Visão Geral da Solução](#)
   - [Módulo de Autoatendimento](#)
-- [Dicionário de linguagem ubíqua](#)
+- [Dicionário de Linguagem Ubíqua](#)
 
 
 ## Visão Geral do Problema
@@ -240,6 +240,10 @@ Este módulo permite que os clientes efetuem seus pedidos, personalizem seus com
   - O lanche, acompanhamento, bebida e sobremesa são opcionais no combo;
   - Se o cliente optar por não se identificar, ele tem a opção de pular a etapa de identificação e acessar o sistema como anônimo.
   - Apenas pessoas com o perfil de gerente podem acessar essa funcionalidade
+
+<p align="center">
+  <img width="95%" src="https://github.com/FIAP-G04/.github/blob/main/images/realizar-pedido-to-be.png" alt="Realizar um Pedido TO-BE">
+</p>
 
 ## Dicionário de Linguagem Ubíqua
 
