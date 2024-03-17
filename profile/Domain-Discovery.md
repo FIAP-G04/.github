@@ -41,12 +41,13 @@ Analisando os relatos do Domain Expert, 5 atores foram identificados na visão g
   <img width="680" src="https://github.com/FIAP-G04/.github/assets/5951374/0f0a5bb4-735e-4ab6-b103-590f319eb15f" alt="Nosso Grupo">
 </p>
 
-Atores | Descrição
-Cliente | Quem efetua um pedido na lanchonete com os itens desejados.
-Atendente de Caixa | Encarregado de registrar o pedido do cliente, calcular o valor total e receber o pagamento correspondente.
-Atendente de Cozinha | São especialistas na elaboração dos itens do pedido do cliente. Cada atendente de cozinha é designado a um grupo específico de preparação, como lanches, acompanhamentos, bebidas ou sobremesas. Sua responsabilidade inclui a preparação e disponibilização do item pronto ao atendente de entrega.
-Atendente de Entrega | Responsável por montar os itens do pedido em uma bandeja e gerenciar as entregas aos clientes. Após a entrega do pedido, o atendente registra a retirada de cada pedido.
-Gerente | Responsável por gerenciar os produtos apresentados no cardápio aos clientes.
+| Atores | Descrição |
+|--------|-----------|
+| Cliente | Quem efetua um pedido na lanchonete com os itens desejados. |
+| Atendente de Caixa | Encarregado de registrar o pedido do cliente, calcular o valor total e receber o pagamento correspondente. |
+| Atendente de Cozinha | São especialistas na elaboração dos itens do pedido do cliente. Cada atendente de cozinha é designado a um grupo específico de preparação, como lanches, acompanhamentos, bebidas ou sobremesas. Sua responsabilidade inclui a preparação e disponibilização do item pronto ao atendente de entrega. |
+| Atendente de Entrega | Responsável por montar os itens do pedido em uma bandeja e gerenciar as entregas aos clientes. Após a entrega do pedido, o atendente registra a retirada de cada pedido. |
+| Gerente | Responsável por gerenciar os produtos apresentados no cardápio aos clientes. |
 
 
 ### Cenários
