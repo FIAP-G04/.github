@@ -316,3 +316,8 @@ Segue abaixo um conjunto de palavras que compõem o dicionário de **linguagem u
 | Mercado Pago | É uma plataforma de serviços financeiros e pagamentos online desenvolvida pelo Mercado Livre. |
 
 ## Event Storming
+<p align="center">
+  <img width="100%" src="https://github.com/FIAP-G04/.github/blob/main/images/event-storming.png" alt="Event Storming" />
+</p>
+
+Para baixar o formato **PDF** do mapeamento realizado com a dinâmica de Event Storming, [clique aqui](https://github.com/FIAP-G04/.github/blob/main/profile/Event%20Storming%20-%20iBurguer.pdf)
