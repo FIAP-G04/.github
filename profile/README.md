@@ -28,7 +28,7 @@ Os repositórios desta organização têm como objetivo principal o desenvolvime
 - [Event Storming](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#event-storming)
 
 ## iBurguer
-- [O que é iBurguer?](#)
+- [O que é iBurguer?](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#o-que-%C3%A9-ibuguer)
 - [Funcionalidades](#)
 - [Visão Geral da Arquitetura](#)
 - [Visão Geral da Arquitetura](#)
