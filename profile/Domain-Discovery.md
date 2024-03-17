@@ -138,7 +138,7 @@ Os domínios genéricos **(Generic Domains)** são geralmente aqueles que não s
 
 
 ## Análise de Subdomínios no cenário TO-BE
-Na primeira parte deste documento abordamos o cenário AS-IS e os problemas existentes. Sendo mapeadas as seguintes necessidades de investimento:
+Na primeira parte deste documento abordamos o cenário AS-IS e os problemas existentes, sendo mapeadas as seguintes necessidades de investimento:
 
 - Gestão de pedidos 
 - Autoatendimento
