@@ -1,7 +1,25 @@
 # Domain Discovery 💡
-Está seção ....
 
-## Visão geral do problema
+- [Visão Geral do Problema](#)
+- [Análise do Cenário Atual (AS-IS)](#)
+- [Decomposição da Visão do Domain Expert](#)
+  - [Atores](#)
+  - [Cenários](#)
+    - [Realizar um Pedido](#)
+    - [Preparação e Retirada do Pedido](#)
+    - [Revisar Informações do Cardápio](#) 
+- [Mapeamento de Domínios e Subdomínios](#)
+  - [Core Domains](#)
+  - [Supporting Domains](#)
+  - [Generic Domains](#)
+- [Análise de Subdomínios no Cenário TO-BE](#)
+- [Análise Estratégica dos Subdomínios](#)
+- [Visão Geral da Solução](#)
+  - [Módulo de Autoatendimento](#)
+- [Dicionário de linguagem ubíqua](#)
+
+
+## Visão Geral do Problema
 <p align="center">
   <img width="100%" src="https://github.com/FIAP-G04/.github/blob/main/images/byte-burguer.png" alt="Byte Burguer">
 </p>
@@ -22,7 +40,7 @@ Por fim, a lanchonete enfrenta o de-safio de não possuir um sistema para coleta
 
 Em resumo, a lanchonete está enfrentando uma série de desafios operacionais devido à falta de sistemas de automação e gestão. Para garantir o sucesso contínuo do negócio, é essencial investir em sistemas de gerenciamento de pedidos, sistemas de autoatendimento, sistemas de controle de estoque, sistemas de cadastramento de clientes e análise de dados, cardápio digital e sistemas de avaliação da experiência do cliente. Essas melhorias não apenas aumentarão a eficiência operacional, mas também proporcionarão uma experiência aprimorada para os clientes e oportunidades de crescimento para a lanchonete.
 
-## Análise do cenário atual (AS-IS)
+## Análise do Cenário Atual (AS-IS)
 Atualmente, nós disponibilizamos aos nossos clientes um cardápio dividido em 4 seções: lanches, acompanhamentos, bebidas e sobremesas. Este cardápio é apresentado em formato físico ao cliente e inclui todos os detalhes relevantes sobre os produtos, como nome, descrição, preço e imagem. A gestão dessas informações é de responsabilidade do gerente da lanchonete que as revisa mensalmente através de um arquivo word. 
 
 Quando o cliente já sabe o que deseja pedir, ele começa a fazer o seu pedido selecionando entre lanches, acompanhamentos, bebidas e sobremesas, sendo que cada categoria que compõe o pedido é opcional. 
@@ -35,7 +53,7 @@ O atendente de entrega é responsável por montar o pedido que será entregue ao
 
 Após a montagem do pedido, o atendente de entrega anuncia em voz alta o número do pedido que está pronto, permitindo que o cliente vá até o balcão e retire seu pedido. O cliente apresenta o código de retirada e recebe o seu pedido completo. Por sua vez, o atendente de entrega coloca o papel com o resumo do pedido em uma urna de pedidos entregues.
 
-## Decomposição da visão do Domain Expert
+## Decomposição da Visão do Domain Expert
 Nesta seção, através da aplicação da metodologia do Domain Storytelling, iremos ex-plorar os cenários cruciais e os atores centrais que desempenham papéis fundamentais nas narrativas compartilhadas pelo Domain Expert.
 
 ### Atores
@@ -152,7 +170,7 @@ Os domínios genéricos **(Generic Domains)** são geralmente aqueles que não s
 - **Recursos Humanos:** Este subdomínio desempenha um papel fundamental na gestão da equipe que trabalha na lanchonete, assegurando que haja pessoal adequado para todas as tarefas diárias. Sua responsabilidade principal consiste em garantir que a lanchonete esteja em conformidade com todas as regulamentações trabalhistas, proporcionando um ambiente de trabalho seguro e produtivo para seus funcionários. Isso é alcançado por meio do recrutamento e capacitação de profissionais apropriados.
 
 
-## Análise de Subdomínios no cenário TO-BE
+## Análise de Subdomínios no Cenário TO-BE
 Na primeira parte deste documento abordamos o cenário AS-IS e os problemas existentes, sendo mapeadas as seguintes necessidades de investimento:
 
 - Gestão de pedidos 
@@ -176,7 +194,7 @@ Desta forma, temos os seguintes subdomínios definidos no cenário TO-BE:
   <img width="90%" src="https://github.com/FIAP-G04/.github/blob/main/images/subdominios-to-be.png" alt="Subdomínios TO-BE">
 </p>
 
-## Análise estratégica dos Subdomínios
+## Análise Estratégica dos Subdomínios
 Dado o cenário TO-BE dos novos subdomínios e as necessidades mapeadas no contexto do problema, podemos analisar de forma estratégica qual a melhor abordagem para solucionar cada uma das necessidades. Essas estratégias vão desde o desenvolvimento de soluções própria e personalizadas até a contratação de serviços ou aquisição de softwares de terceiros.
 
 Para esta análise, iremos abordar apenas os subdomínios envolvidos nas necessidades mencionadas no contexto do problema. Iremos considerar 2 aspectos: **Complexidade do Modelo** e **Diferenciação para o negócio**.
@@ -197,9 +215,10 @@ Por outro lado, o subdomínio **Gerenciamento de Clientes** ofereceria benefíci
 
 Já os subdomínios **Gestão de Cardápio**, **Carrinho de Compras** e **Acompanhamento de Pedidos** possuem complexidades diferentes, mas todos possuem alto valor de diferenciação para o negócio. Tal fato nos leva a recomendar investimento prioritário em soluções customizadas que atendam essas necessidades.
 
-## Visão geral da solução
+## Visão Geral da Solução
 Nesta seção, apresentaremos uma visão geral da solução proposta para atender às necessidades descritas na primeira parte deste documento. Aqui, exploraremos em detalhes cada um dos componentes que constituem a plataforma **iBurguer**. 
 
+### Módulo de Autoatendimento
 Este módulo permite que os clientes efetuem seus pedidos, personalizem seus combos e efetuem o pagamento sem a necessidade de interação direta com um atendente de caixa. Inicialmente, um totem de autoatendimento será disponibilizado dentro da lanchonete para que os clientes possam interagir diretamente com a plataforma **iBurguer**. No entanto, futuramente, também será lançado um aplicativo móvel e uma página web que permitirá aos clientes fazerem seus pedidos diretamente por meio de seus smartphones. Este módulo oferece as seguintes funcionalidades:
 
 - Listagem dos itens do cardápio;
@@ -222,7 +241,7 @@ Este módulo permite que os clientes efetuem seus pedidos, personalizem seus com
   - Se o cliente optar por não se identificar, ele tem a opção de pular a etapa de identificação e acessar o sistema como anônimo.
   - Apenas pessoas com o perfil de gerente podem acessar essa funcionalidade
 
-## Dicionário de linguagem ubíqua
+## Dicionário de Linguagem Ubíqua
 
 
 ## Event Storming
