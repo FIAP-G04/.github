@@ -17,10 +17,6 @@
 ## O que é iBurguer?
 Em suma, a plataforma **iBurguer** é uma solução abrangente que aborda os desafios operacionais da lanchonete **Byte Burguer**, oferecendo uma solução integrada de **gerenciamento de pedidos**, **autoatendimento**, **gestão de clientes**, **cardápio digital** entre outras coisas. Essas funcionalidades não apenas melhoram a eficiência operacional, mas também proporcionam uma experiência aprimorada para os clientes e oportunidades de crescimento para o negócio.
 
-<p align="center">
-  <img width="100%" src="https://github.com/FIAP-G04/.github/blob/main/images/iburguer.png" alt="iBurguer">
-</p>
-
 ## Funcionalidades
 Seguem abaixo a lista de funcionalidades expostas na API:
 
@@ -43,9 +39,9 @@ O primeiro passo para a execução da API é o preenchimento do cardápio com it
 
 O próximo passo é o registro dos clientes que farão os pedidos na lanchonete. Para esse fim são disponibilizados os seguintes endpoints:
 
-```POST /api/customers``` <br>Registra um cliente;
+```POST /api/customers/signup``` <br>Registra um cliente;
 
-```GET /api/customers/{cpf}``` <br>Autentica o cliente a partir do CPF;
+```POST /api/customers/signin``` <br>Autentica o cliente a partir do CPF;
 
 ### Carrinho de Compras
 
@@ -99,11 +95,40 @@ Após a confirmação do pagamento, o mesmo é enviado para a fila de pedidos. A
 
 ## Visão Geral da Arquitetura
 
+### Diagrama de Contexto
+
+<p align="center">
+  <img width="100%" src="" alt="iBurguer">
+</p>
+
+### Diagrama de Container
+
+<p align="center">
+  <img width="100%" src="" alt="iBurguer">
+</p>
+
 ## Estrutura de Persistência de Dados
 
 ## Arquitetura de Aplicação
 
 ## Tecnologias Utilizadas
+Esse projeto está utilizando as seguintes tecnologias até o momento:
+
+- [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/)
+- [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Docker](https://www.docker.com/)
+- [Kubernetes](https://kubernetes.io/pt-br/)
+- [Helm](https://helm.sh/)
+- [Swagger](https://swagger.io/)
+- [Amazon Relational Database Service](https://aws.amazon.com/pt/rds/)
+- [Amazon Cognito](https://aws.amazon.com/pt/pm/cognito/)
+- [AWS Lambda](https://aws.amazon.com/pt/pm/lambda/)
+- [Amazon API Gateway](https://aws.amazon.com/pt/api-gateway/)
+- [Amazon Elastic Kubernetes Service](https://aws.amazon.com/pt/eks/)
+- [Terraform](https://www.terraform.io/)
+- [Github Actions](https://github.com/features/actions)
+- [K6](https://k6.io/)
 
 ## Considerações de Escalabilidade e Desempenho
 
