@@ -158,6 +158,10 @@ Esse projeto está utilizando as seguintes tecnologias até o momento:
 - [K6](https://k6.io/)
 
 ## Fluxo de Implantação e CI/CD
+Até o momento foram criados **2 repositórios** contendo código fonte e **3 repositórios** de infraestrutura como código (IaC). Todos os repositórios possuem pipelines de CI e CD utilizando GitHub Actions.
+
+- [**iburguer-onboarding:**](https://github.com/FIAP-G04/iburguer-onboarding) Representa o código fonte das **2 lambdas functions** **SignIn** (Identificação do Cliente) e **SignUp** (Registro do Cliente)
+- [**iburguer-api:**](https://github.com/FIAP-G04/iburguer-api) Representa a API do monolito que é publicado no Kubernetes.
 
 ## Infraestrutura na AWS usando Terraform
 Optamos pela utilização da AWS com provisionamento da infraestrutura como código (IaC) através do Terraform utilizando um pipeline do GitHub Actions para executá-lo. Dividimos a criação do ambiente nos seguintes repositórios:
