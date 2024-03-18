@@ -6,15 +6,15 @@
   - [Carrinho de Compras](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#carrinho-de-compras)
   - [Pagamento](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pagamento)
   - [Gestão de Pedidos](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pedidos)
-- [Visão Geral da Arquitetura](#)
-  - [Diagrama de Contexto](#)
-  - [Diagrama de Container](#)
-- [Estrutura de Persistência de Dados](#)
+- [Visão Geral da Arquitetura](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#vis%C3%A3o-geral-da-arquitetura)
+  - [Diagrama de Contexto](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-contexto)
+  - [Diagrama de Container](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-container)
+- [Estrutura de Persistência de Dados](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#estrutura-de-persist%C3%AAncia-de-dados)
 - [Arquitetura de Aplicação](#)
-- [Tecnologias Utilizadas](#)
-- [Considerações de Escalabilidade e Desempenho](#)
-- [Fluxo de Implantação e CI/CD](#)
-- [Infraestrutura na AWS usando Terraform](#)
+- [Tecnologias Utilizadas](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#tecnologias-utilizadas)
+- [Considerações de Escalabilidade e Desempenho](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#considera%C3%A7%C3%B5es-de-escalabilidade-e-desempenho)
+- [Fluxo de Implantação e CI/CD](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#fluxo-de-implanta%C3%A7%C3%A3o-e-cicd)
+- [Infraestrutura na AWS usando Terraform](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#infraestrutura-na-aws-usando-terraform)
   
 ## O que é iBurguer?
 Em suma, a plataforma **iBurguer** é uma solução abrangente que aborda os desafios operacionais da lanchonete **Byte Burguer**, oferecendo uma solução integrada de **gerenciamento de pedidos**, **autoatendimento**, **gestão de clientes**, **cardápio digital** entre outras coisas. Essas funcionalidades não apenas melhoram a eficiência operacional, mas também proporcionam uma experiência aprimorada para os clientes e oportunidades de crescimento para o negócio.
