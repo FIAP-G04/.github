@@ -10,7 +10,8 @@
   - [Diagrama de Contexto](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-contexto)
   - [Diagrama de Container](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-container)
 - [Estrutura de Persistência de Dados](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#estrutura-de-persist%C3%AAncia-de-dados)
-- [Arquitetura de Aplicação](#)
+  - [RDS - Amazon Relational Database Service](#)
+  - [Amazon Cognito](#)
 - [Tecnologias Utilizadas](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#tecnologias-utilizadas)
 - [Considerações de Escalabilidade e Desempenho](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#considera%C3%A7%C3%B5es-de-escalabilidade-e-desempenho)
 - [Fluxo de Implantação e CI/CD](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#fluxo-de-implanta%C3%A7%C3%A3o-e-cicd)
@@ -124,8 +125,12 @@ Decidimos armazenar os dados do **Cliente** diretamente no **Amazon Cognito** e 
   <img width="600" src="https://github.com/FIAP-G04/.github/blob/main/images/mer.png" alt="Modelo de Dados">
 </p>
 
-### Amazon Cognito
+### Dados de Cliente
+Os dados de cliente estão sendo armazenados no próprio Amazon Cognito.
 
+<p align="center">
+  <img width="120" src="https://github.com/FIAP-G04/.github/blob/main/images/customer.png" alt="Dados de Cliente">
+</p>
 
 ## Arquitetura de Aplicação
 
