@@ -9,11 +9,11 @@
 - [Visão Geral da Arquitetura](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#vis%C3%A3o-geral-da-arquitetura)
   - [Diagrama de Contexto](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-contexto)
   - [Diagrama de Container](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-container)
+  - [Diagrama de Implantação]()
 - [Estrutura de Persistência de Dados](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#estrutura-de-persist%C3%AAncia-de-dados)
   - [RDS - Amazon Relational Database Service](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#rds---amazon-relational-database-service)
   - [Dados do Cliente](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#dados-de-cliente)
 - [Tecnologias Utilizadas](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#tecnologias-utilizadas)
-- [Considerações de Escalabilidade e Desempenho](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#considera%C3%A7%C3%B5es-de-escalabilidade-e-desempenho)
 - [Fluxo de Implantação e CI/CD](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#fluxo-de-implanta%C3%A7%C3%A3o-e-cicd)
 - [Infraestrutura na AWS usando Terraform](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#infraestrutura-na-aws-usando-terraform)
   
@@ -114,7 +114,12 @@ Nesta perspectiva, o diagrama de contexto mostra o **iBurguer** e os sistemas ex
 Aqui, a plataforma iBurguer é dividida em contêineres, que podem ser aplicativos, serviços da web, bancos de dados, etc. Cada contêiner é representado como uma caixa e mostra as relações de dependência entre eles.
 
 <p align="center">
-  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png?raw=true" alt="Diagrama de Container">
+  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png" alt="Diagrama de Container">
+</p>
+
+### Diagrama de Implantação Kubernetes
+<p align="center">
+  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-implantacao-kubernetes.png" alt="Diagrama de Container">
 </p>
 
 ## Estrutura de Persistência de Dados
@@ -151,8 +156,6 @@ Esse projeto está utilizando as seguintes tecnologias até o momento:
 - [Terraform](https://www.terraform.io/)
 - [Github Actions](https://github.com/features/actions)
 - [K6](https://k6.io/)
-
-## Considerações de Escalabilidade e Desempenho
 
 ## Fluxo de Implantação e CI/CD
 
