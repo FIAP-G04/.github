@@ -117,6 +117,13 @@ Aqui, a plataforma iBurguer é dividida em contêineres, que podem ser aplicativ
   <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png" alt="Diagrama de Container">
 </p>
 
+### Diagrama de Sequência do processo de SignIn
+Este diagrama visa mostrar o passo à passo do processo de registro de um cliente utilizando a plataforma **Amazon Cognito**.
+
+<p align="center">
+  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/signup-diagram.png" alt="Diagrama de Sequência">
+</p>
+
 ### Diagrama de Implantação Kubernetes
 <p align="center">
   <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-implantacao-kubernetes.png" alt="Diagrama de Container">
