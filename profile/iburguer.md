@@ -9,7 +9,7 @@
 - [Visão Geral da Arquitetura](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#vis%C3%A3o-geral-da-arquitetura)
   - [Diagrama de Contexto](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-contexto)
   - [Diagrama de Container](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-container)
-  - [Diagrama de Implantação]()
+  - [Diagrama de Implantação Kubernetes](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-implanta%C3%A7%C3%A3o-kubernetes)
 - [Estrutura de Persistência de Dados](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#estrutura-de-persist%C3%AAncia-de-dados)
   - [RDS - Amazon Relational Database Service](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#rds---amazon-relational-database-service)
   - [Dados do Cliente](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#dados-de-cliente)
@@ -119,7 +119,7 @@ Aqui, a plataforma iBurguer é dividida em contêineres, que podem ser aplicativ
 
 ### Diagrama de Implantação Kubernetes
 <p align="center">
-  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-implantacao-kubernetes.png" alt="Diagrama de Container">
+  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-implantacao-kubernetes.png" alt="Diagrama de Container">
 </p>
 
 ## Estrutura de Persistência de Dados
