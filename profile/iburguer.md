@@ -109,7 +109,7 @@ Nesta perspectiva, o diagrama de contexto mostra o **iBurguer** e os sistemas ex
 Aqui, a plataforma iBurguer é dividida em contêineres, que podem ser aplicativos, serviços da web, bancos de dados, etc. Cada contêiner é representado como uma caixa e mostra as relações de dependência entre eles.
 
 <p align="center">
-  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png?raw=true" alt="Diagrama de Container">
+  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png?raw=true" alt="Diagrama de Container">
 </p>
 
 ## Estrutura de Persistência de Dados
