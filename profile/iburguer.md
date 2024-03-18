@@ -7,6 +7,8 @@
   - [Pagamento](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pagamento)
   - [Gestão de Pedidos](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pedidos)
 - [Visão Geral da Arquitetura](#)
+  - [Diagrama de Contexto](#)
+  - [Diagrama de Container](#)
 - [Estrutura de Persistência de Dados](#)
 - [Arquitetura de Aplicação](#)
 - [Tecnologias Utilizadas](#)
@@ -98,13 +100,13 @@ Após a confirmação do pagamento, o mesmo é enviado para a fila de pedidos. A
 ### Diagrama de Contexto
 
 <p align="center">
-  <img width="100%" src="" alt="iBurguer">
+  <img width="100%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-contexto.png?raw=true" alt="iBurguer">
 </p>
 
 ### Diagrama de Container
 
 <p align="center">
-  <img width="100%" src="" alt="iBurguer">
+  <img width="85%" src="" alt="iBurguer">
 </p>
 
 ## Estrutura de Persistência de Dados
