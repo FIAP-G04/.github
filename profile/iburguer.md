@@ -140,3 +140,8 @@ Esse projeto está utilizando as seguintes tecnologias até o momento:
 ## Fluxo de Implantação e CI/CD
 
 ## Infraestrutura na AWS usando Terraform
+Optamos pela utilização da AWS com provisionamento da infraestrutura como código (IaC) através do Terraform utilizando um pipeline do GitHub Actions para executá-lo. Dividimos a criação do ambiente nos seguintes repositórios:
+
+- [**iburguer-eks:**](https://github.com/FIAP-G04/iburguer-eks) Provisiona toda infraestrutura Kubernetes no serviço **Amazon Elastic Kubernetes Service**.
+- [**iburguer-auth:**](https://github.com/FIAP-G04/iburguer-auth) Contém toda infraestrura para o processo de **SignIn** e **SignUp** como **AWS Lambdas**, **Amazon Cognito**, **Amazon API Gateway**.
+- [**iburguer-rds:**](https://github.com/FIAP-G04/iburguer-rds) Provisiona o banco de dados **PostgreSQL** no **Amazon Relational Database Service**.
