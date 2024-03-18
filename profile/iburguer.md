@@ -10,8 +10,8 @@
   - [Diagrama de Contexto](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-contexto)
   - [Diagrama de Container](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-container)
 - [Estrutura de Persistência de Dados](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#estrutura-de-persist%C3%AAncia-de-dados)
-  - [RDS - Amazon Relational Database Service](#)
-  - [Amazon Cognito](#)
+  - [RDS - Amazon Relational Database Service](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#rds---amazon-relational-database-service)
+  - [Dados do Cliente](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#dados-de-cliente)
 - [Tecnologias Utilizadas](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#tecnologias-utilizadas)
 - [Considerações de Escalabilidade e Desempenho](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#considera%C3%A7%C3%B5es-de-escalabilidade-e-desempenho)
 - [Fluxo de Implantação e CI/CD](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#fluxo-de-implanta%C3%A7%C3%A3o-e-cicd)
@@ -132,8 +132,6 @@ Os dados de cliente estão sendo armazenados no próprio Amazon Cognito.
   <img width="120" src="https://github.com/FIAP-G04/.github/blob/main/images/customer.png" alt="Dados de Cliente">
 </p>
 
-## Arquitetura de Aplicação
-
 ## Tecnologias Utilizadas
 Esse projeto está utilizando as seguintes tecnologias até o momento:
 
@@ -149,6 +147,7 @@ Esse projeto está utilizando as seguintes tecnologias até o momento:
 - [AWS Lambda](https://aws.amazon.com/pt/pm/lambda/)
 - [Amazon API Gateway](https://aws.amazon.com/pt/api-gateway/)
 - [Amazon Elastic Kubernetes Service](https://aws.amazon.com/pt/eks/)
+- [Amazon S3](https://aws.amazon.com/pt/s3/)
 - [Terraform](https://www.terraform.io/)
 - [Github Actions](https://github.com/features/actions)
 - [K6](https://k6.io/)
