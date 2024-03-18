@@ -102,14 +102,14 @@ Nesta seção utilizaremos o diagrama C4 para representar algumas visões de arq
 Nesta perspectiva, o diagrama de contexto mostra o **iBurguer** e os sistemas externos com os quais ele interage, como o **Mercado Pago**. Isso ajuda a entender o ambiente geral em que o sistema está inserido e os limites do sistema.
 
 <p align="center">
-  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-contexto.png?raw=true" alt="iBurguer">
+  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-contexto.png?raw=true" alt="Diagrama de Contexto">
 </p>
 
 ### Diagrama de Container
 Aqui, a plataforma iBurguer é dividida em contêineres, que podem ser aplicativos, serviços da web, bancos de dados, etc. Cada contêiner é representado como uma caixa e mostra as relações de dependência entre eles.
 
 <p align="center">
-  <img width="85%" src="" alt="iBurguer">
+  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png?raw=true" alt="Diagrama de Container">
 </p>
 
 ## Estrutura de Persistência de Dados
