@@ -45,3 +45,7 @@ Os repositórios desta organização têm como objetivo principal o desenvolvime
 - [Tecnologias Utilizadas](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#tecnologias-utilizadas)
 - [Fluxo de Implantação e CI/CD](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#fluxo-de-implanta%C3%A7%C3%A3o-e-cicd)
 - [Infraestrutura na AWS usando Terraform](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#infraestrutura-na-aws-usando-terraform)
+
+## Vídeos
+- [Fase 2](https://youtu.be/QVkNK2sfK38)
+- [Fase 3](#)
