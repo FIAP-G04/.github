@@ -141,6 +141,8 @@ Este diagrama visa mostrar o passo à passo do processo de autenticação do cli
 ## Estrutura de Persistência de Dados
 Decidimos armazenar os dados do **Cliente** diretamente no **Amazon Cognito** e manter os contextos de **Cardápio**, **Pedido**, **Pagamento** e **Carrinho** no **Amazon Relational Database Service**, como parte da estratégia para atender aos requisitos da **FASE 3** do **Tech Challenge**, que exige a separação do contexto do **Cliente** do monolito.
 
+A criação da estrutura de tabelas no RDS foi feito através de Migrations do .NET.
+
 ### RDS - Amazon Relational Database Service
 <p align="center">
   <img width="600" src="https://github.com/FIAP-G04/.github/blob/main/images/mer.png" alt="Modelo de Dados">
