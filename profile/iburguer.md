@@ -21,6 +21,7 @@
 - [Tecnologias Utilizadas](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#tecnologias-utilizadas)
 - [Fluxo de Implantação e CI/CD](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#fluxo-de-implanta%C3%A7%C3%A3o-e-cicd)
 - [Infraestrutura na AWS usando Terraform](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#infraestrutura-na-aws-usando-terraform)
+- [Sonar](https://github.com/FIAP-G04/.github/edit/main/profile/iburguer.md#sonar)
   
 ## O que é iBurguer?
 Em suma, a plataforma **iBurguer** é uma solução abrangente que aborda os desafios operacionais da lanchonete **Byte Burguer**, oferecendo uma solução integrada de **gerenciamento de pedidos**, **autoatendimento**, **gestão de clientes**, **cardápio digital** entre outras coisas. Essas funcionalidades não apenas melhoram a eficiência operacional, mas também proporcionam uma experiência aprimorada para os clientes e oportunidades de crescimento para o negócio.
@@ -263,3 +264,6 @@ Optamos pela utilização da AWS com provisionamento da infraestrutura como cód
 
 ## Testes de BDD com Specflow
 Foi criado também um novo repositório para concentrar os testes de integração utilizando BDD. Ele está disponível em [**iburguer-test:**](https://github.com/FIAP-G04/iburguer-test)
+
+## Sonar
+Para visualizar os dados de qualidade de código e cobertura de código [clique aqui](https://sonarcloud.io/summary/overall?id=FIAP-G04_iburguer-menu)
