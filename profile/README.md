@@ -54,4 +54,4 @@ Os repositórios desta organização têm como objetivo principal o desenvolvime
 ## Vídeos
 - [Fase 2](https://youtu.be/QVkNK2sfK38)
 - [Fase 3](https://youtu.be/Xz4LOV8k-Mo)
-- [Fase 4](https://youtu.be/Xz4LOV8k-Mo)
+- [Fase 4](https://www.youtube.com/watch?v=vXeMM1zYoeM)
