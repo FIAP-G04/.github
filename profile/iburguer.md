@@ -197,7 +197,7 @@ Utilizamos o banco de dados MongoDb através do serviço de nuvem Atlas MongoDb.
    "id":"c3b3aa12-1628-4ab4-98f5-8f9a0ffba6d2",
    "orderId": "57523c09-1ad1-4860-aeac-89f3431eb9a8",
    "amount":"10.0",
-   "createdAt":1716161665039",
+   "createdAt":"1716161665039",
    "payedAt": "1716162208616",
    "refusedAt":null,
    "status":"Processed",
