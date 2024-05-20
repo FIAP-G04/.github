@@ -105,18 +105,11 @@ Após a confirmação do pagamento, o mesmo é enviado para a fila de pedidos. A
 ## Visão Geral da Arquitetura
 Nesta seção utilizaremos o diagrama C4 para representar algumas visões de arquitetura da plataforma **iBurguer**.
 
-### Diagrama de Contexto
-Nesta perspectiva, o diagrama de contexto mostra o **iBurguer** e os sistemas externos com os quais ele interage, como o **Mercado Pago**. Isso ajuda a entender o ambiente geral em que o sistema está inserido e os limites do sistema.
-
-<p align="center">
-  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-contexto.png?raw=true" alt="Diagrama de Contexto">
-</p>
-
 ### Diagrama de Container
 Aqui, a plataforma iBurguer é dividida em contêineres, que podem ser aplicativos, serviços da web, bancos de dados, etc. Cada contêiner é representado como uma caixa e mostra as relações de dependência entre eles.
 
 <p align="center">
-  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png" alt="Diagrama de Container">
+  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/iburguer-macro-architecture.png" alt="Diagrama de Container">
 </p>
 
 ### Diagrama de Sequência do processo de SignUp
@@ -131,11 +124,6 @@ Este diagrama visa mostrar o passo à passo do processo de autenticação do cli
 
 <p align="center">
   <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/signin-diagram.png" alt="Diagrama de Sequência">
-</p>
-
-### Diagrama de Implantação Kubernetes
-<p align="center">
-  <img width="85%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-implantacao-kubernetes.png" alt="Diagrama de Container">
 </p>
 
 ## Estrutura de Persistência de Dados
