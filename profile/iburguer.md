@@ -134,7 +134,56 @@ Decidimos armazenar os dados do **Cliente** diretamente no **Amazon Cognito** e 
 
 A criação da estrutura de tabelas no RDS foi feito através de Migrations do .NET.
 
-### RDS - Amazon Relational Database Service
+### Gestão de Cardápio
+Para o armazenamento do cenário de Cardápio Digital, optamos pela utilização do MongoDB devido a várias características chave que ele possui. Ele oferece um modelo de dados flexível, permitindo fácil alteração de esquemas sem migrações complexas. Sua capacidade de escalabilidade horizontal garante que o sistema suporte um crescimento significativo e mantenha alta performance em operações de leitura e escrita. O MongoDB também permite o armazenamento eficiente de dados complexos com estruturas aninhadas e arrays de forma nativa.
+
+Além disso, o MongoDB assegura alta disponibilidade e confiabilidade através da replicação e tolerância a falhas. Ferramentas avançadas de administração e um robusto ecossistema de suporte facilitam a gestão e manutenção do banco de dados. Essas características combinadas tornam o MongoDB uma opção ideal para um cardápio digital, oferecendo flexibilidade, escalabilidade e desempenho superior.
+
+Segue um exemplo da estrutura de dados armazenada no banco de dados referente a um item do cardápio:
+```json
+{
+   "id": "082d3640-34a1-48e2-9b1d-ae93cf5bce80",
+   "name":"Batata Frita",
+   "description":"Batata frita deliciosa e crocante",
+   "price":"10.0"
+   "category":1,
+   "preparationTime":3,
+   "enabled":true,
+   "createdAt":"1716160618861",
+   "updatedAt":"1716160618861",
+   "images":[
+      "http://img.url.com"
+   ]
+}
+```
+
+### Carrinho de Compras
+O Redis é ideal para armazenar dados de carrinhos de compras devido à sua performance rápida, já que é um banco de dados em memória, proporcionando leituras e escritas instantâneas. Suas estruturas de dados ricas e flexíveis permitem armazenar e manipular eficientemente os itens do carrinho. Além disso, Redis oferece persistência transitória com expiração automática de chaves, ideal para gerenciar sessões de carrinho. Sua capacidade de escalabilidade e clusterização facilita a gestão de grandes volumes de dados e usuários simultâneos. Redis também é fácil de integrar com diversas linguagens e frameworks, tornando a implementação rápida e eficiente. 
+
+Segue um exemplo da estrutura de dados armazenada no banco de dados referente a um carrinho de compra:
+```json
+{
+   "Id":"209fb1d8-8b00-4d67-a8dd-4cf80a5ccefc",
+   "CustomerId":"3fa85f64-5717-4562-b3fc-2c963f66afa6",
+   "Closed":false,
+   "CreatedAt":"2024-05-19T22:54:06.860262-03:00",
+   "UpdatedAt":"2024-05-19T22:56:38.400384-03:00",
+   "Items":[
+      {
+         "CartItemId":"aaeded25-ea11-423b-922b-0f50c80f6de1",
+         "Product":{
+            "ProductId":"ab59d5ca-0275-4a15-b065-4da640358138",
+            "Name":"Sorvete de Chocolate",
+            "Type":"Dessert",
+            "Price":10.0
+         },
+         "Quantity":2,
+         "UnitPrice":10.0
+      }
+   ],
+}
+```
+
 <p align="center">
   <img width="600" src="https://github.com/FIAP-G04/.github/blob/main/images/mer.png" alt="Modelo de Dados">
 </p>
