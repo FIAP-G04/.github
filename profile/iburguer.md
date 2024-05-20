@@ -182,9 +182,28 @@ Para este cenário optamos por utilizar AWS Elasticache como serviço de Redis. 
 }
 ```
 
+### Gestão de Pedidos
+O PostgreSQL é uma escolha robusta e confiável para armazenar dados de pedidos. Suas capacidades de consistência, segurança, suporte a consultas complexas, escalabilidade e extensibilidade garantem que ele possa atender eficientemente às demandas do negócio, proporcionando uma base sólida para operações comerciais críticas. Para este cenário, fizemos uso do **Amazon RDS** utilizando **PostgreSQL**.
+
 <p align="center">
-  <img width="600" src="https://github.com/FIAP-G04/.github/blob/main/images/mer.png" alt="Modelo de Dados">
+  <img width="600" src="https://github.com/FIAP-G04/.github/blob/main/images/order-er.jpeg" alt="Modelo de Dados">
 </p>
+
+### Gestão de Pagamentos
+Utilizamos o banco de dados MongoDb através do serviço de nuvem Atlas MongoDb. Pelas mesmas razões apontadas no item referente ao detalhamento do armazenamento do Gestão de Cardápio.
+
+```json
+{
+   "id":"c3b3aa12-1628-4ab4-98f5-8f9a0ffba6d2",
+   "orderId": "57523c09-1ad1-4860-aeac-89f3431eb9a8",
+   "amount":"10.0",
+   "createdAt":1716161665039",
+   "payedAt": "1716162208616",
+   "refusedAt":null,
+   "status":"Processed",
+   "qrData":"00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABELAAAADEMELO6007BARUERI6207050363040B6D"
+}
+```
 
 ### Dados de Cliente
 Os dados de cliente estão sendo armazenados no próprio Amazon Cognito.
