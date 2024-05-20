@@ -7,11 +7,9 @@
   - [Pagamento](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pagamento)
   - [Gestão de Pedidos](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#pedidos)
 - [Visão Geral da Arquitetura](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#vis%C3%A3o-geral-da-arquitetura)
-  - [Diagrama de Contexto](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-contexto)
   - [Diagrama de Container](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-container)
   - [Diagrama de Sequência do processo de SignUp](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-sequ%C3%AAncia-do-processo-de-signup)
   - [Diagrama de Sequência do processo de SignIn](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-sequ%C3%AAncia-do-processo-de-signin)
-  - [Diagrama de Implantação Kubernetes](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#diagrama-de-implanta%C3%A7%C3%A3o-kubernetes)
 - [Estrutura de Persistência de Dados](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#estrutura-de-persist%C3%AAncia-de-dados)
   - [RDS - Amazon Relational Database Service](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#rds---amazon-relational-database-service)
   - [Dados do Cliente](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#dados-de-cliente)
@@ -32,17 +30,19 @@ Seguem abaixo a lista de funcionalidades expostas na API:
 ### Gestão de Cardápio
 O primeiro passo para a execução da API é o preenchimento do cardápio com itens que podem ser adicionados ao pedido. 
 
-```POST /api/menu/products``` <br>Inclui um item no cardápio;
+```POST /api/menu/items``` <br>Inclui um item no cardápio;
 
-```PUT /api/menu/products``` <br>Atualiza um item do cardápio;
+```PUT /api/menu/items/{id}``` <br>Atualiza um item do cardápio;
 
-```DELETE /api/menu/products``` <br>Remove um item do cardápio;
+```DELETE /api/menu/items/{id}``` <br>Remove um item do cardápio;
 
-```PATCH /api/menu/products/enabled``` <br>Habilita um item do cardápio;
+```PATCH /api/menu/items/{id}/enabled``` <br>Habilita um item do cardápio;
 
-```PATCH /api/menu/products/disabled``` <br>Desabilita um item do cardápio;
+```PATCH /api/menu/items/{id}/disabled``` <br>Desabilita um item do cardápio;
 
-```GET /api/menu/products/{category}``` <br>Obtem todos os itens do cardápio a partir de uma determinada categoria;
+```GET /api/menu/items/{category}``` <br>Obtem todos os itens do cardápio a partir de uma determinada categoria;
+
+```GET /api/menu/items/{id}``` <br>Obtem os dados de um item do cardápio;
 
 ### Gestão de Clientes
 
@@ -60,29 +60,25 @@ Havendo um cardápio definido com itens e um cliente cadastrado buscando pelos m
 
 Em seguida, os itens do carrinho podem ser gerenciados através dos seguintes endpoints:
 
-```POST /api/carts/{shoppingCartId}/item``` <br>Adiciona um item do menu ao carrinho de compras através de seu ID;
+```POST /api/carts/{shoppingCartId}/items``` <br>Adiciona um item do menu ao carrinho de compras através de seu ID;
 
-```PATCH /api/carts/{shoppingCartId}/item/{cartItemId}/increment``` <br>Incrementa a quantidade de um determinado item do carrinho através de seu ID;
+```PATCH /api/carts/{shoppingCartId}/items/{cartItemId}/incremented``` <br>Incrementa a quantidade de um determinado item do carrinho através de seu ID;
 
-```PATCH /api/carts/{shoppingCartId}/item/{cartItemId}/decrement``` <br>Decrementa a quantidade de um determinado item do carrinho através de seu ID;
+```PATCH /api/carts/{shoppingCartId}/items/{cartItemId}/decremented``` <br>Decrementa a quantidade de um determinado item do carrinho através de seu ID;
 
-```DELETE /api/carts/{shoppingCartId}/item/{cartItemId}``` <br>Remove um determinado item do carrinho através de seu ID;
+```DELETE /api/carts/{shoppingCartId}/items/{cartItemId}``` <br>Remove um determinado item do carrinho através de seu ID;
 
-```PATCH /api/carts/{shoppingCartId}/clear``` <br>Limpa o carrinho de compras;
+```PATCH /api/carts/{shoppingCartId}/checkout``` <br>Gera o QRCode de Pagamento e também o pedido do cliente;
 
 ### Pagamento
 
-Após o carrinho de compras possuir todos os itens que o cliente deseja pedir, é necessário prosseguir para o pagamento:
-
-```POST /api/checkout/cart/{shoppingCartId}``` <br>Cria um pagamento para um carrinho de compras existente;
-
 Após a criação de um pagamento, o gerenciamento de seu *status* pode ser feito pelos seguintes endpoints:
 
-```GET /api/checkout/{paymentId}/status``` <br>Retorna o *status* atual do pagamento;
+```POST /api/payments``` <br>Gera QrCode no Mercado Pago e registra um pagamento no status de pendente no banco de dados;
 
-```PUT /api/checkout/{paymentId}/confirm``` <br>Webhook que confirma o pagamento;
+```PUT /api/payments/{idd}/confirmed``` <br>Webhook que confirma o pagamento;
 
-```PUT /api/checkout/{paymentId}/refuse``` <br>Webhook que recusa o pagamento;
+```PUT /api/payments/{id}/refused``` <br>Webhook que recusa o pagamento;
 
 ### Pedidos
 
@@ -94,13 +90,13 @@ Após a confirmação do pagamento, o mesmo é enviado para a fila de pedidos. A
 
 ```GET /api/orders/queue``` <br>Retorna a fila de pedidos, com os pedidos em *status* Pronto, Em Preparação e Finalizado;
 
-```PATCH /api/orders/{orderId}/start``` <br>Confirma o pedido, passando o mesmo para o *status* Em Preparação. 
+```PATCH /api/orders/{id}/started``` <br>Confirma o pedido, passando o mesmo para o *status* Em Preparação. 
 
-```PATCH /api/orders/{orderId}/complete``` <br>Indica que o pedido foi preparado pela cozinha, passando o mesmo para o *status* Pronto;
+```PATCH /api/orders/{id}/completed``` <br>Indica que o pedido foi preparado pela cozinha, passando o mesmo para o *status* Pronto;
 
-```PATCH /api/orders/{orderId}/deliver``` <br>Indica que o pedido foi recebido pelo cliente, passando o mesmo para o *status* Finalizado;
+```PATCH /api/orders/{id}/delivered``` <br>Indica que o pedido foi recebido pelo cliente, passando o mesmo para o *status* Finalizado;
 
-```PATCH /api/orders/{orderId}/cancel``` <br>Cancela um pedido;
+```PATCH /api/orders/{id}/canceled``` <br>Cancela um pedido;
 
 ## Visão Geral da Arquitetura
 Nesta seção utilizaremos o diagrama C4 para representar algumas visões de arquitetura da plataforma **iBurguer**.
