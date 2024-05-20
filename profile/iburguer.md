@@ -246,7 +246,7 @@ Optamos pela utilização da AWS com provisionamento da infraestrutura como cód
 
 - [**iburguer-eks:**](https://github.com/FIAP-G04/iburguer-eks) Provisiona toda infraestrutura Kubernetes no serviço **Amazon Elastic Kubernetes Service**.
 - [**iburguer-auth:**](https://github.com/FIAP-G04/iburguer-auth) Contém toda infraestrura para o processo de **SignIn** e **SignUp** como **AWS Lambdas**, **Amazon Cognito**, **Amazon API Gateway**.
-- [**iburguer-rds:**](https://github.com/FIAP-G04/iburguer-rds) Provisiona o banco de dados **PostgreSQL** no **Amazon Relational Database Service**.
+- [**iburguer-rds:**](https://github.com/FIAP-G04/iburguer-rds) Provisiona o banco de dados **PostgreSQL** no **Amazon Relational Database Service**. Também inclui o banco de dados **Redis** através do **Amazon Elasticache** e o **MongoDB** através do **MongoDB Atlas**.
 
 ## Testes de BDD com Specflow
 Foi criado também um novo repositório para concentrar os testes de integração utilizando BDD. Ele está disponível em [**iburguer-test:**](https://github.com/FIAP-G04/iburguer-test)
