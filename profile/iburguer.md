@@ -236,7 +236,10 @@ Esse projeto está utilizando as seguintes tecnologias até o momento:
 Até o momento foram criados **2 repositórios** contendo código fonte e **3 repositórios** de infraestrutura como código (IaC). Todos os repositórios possuem pipelines de CI e CD utilizando GitHub Actions.
 
 - [**iburguer-onboarding:**](https://github.com/FIAP-G04/iburguer-onboarding) Representa o código fonte das **2 lambdas functions** **SignIn** (Identificação do Cliente) e **SignUp** (Registro do Cliente)
-- [**iburguer-api:**](https://github.com/FIAP-G04/iburguer-api) Representa a API do monolito que é publicado no Kubernetes.
+- [**iburguer-menu:**](https://github.com/FIAP-G04/iburguer-menu) Representa a API de gerenciamento do Menu com os itens que podem ser adicionados ao carrinho.
+- [**iburguer-shopping-cart:**](https://github.com/FIAP-G04/iburguer-shopping-cart) Representa a API de gerenciamento de carrinho, onde é possível manipular os itens adicionados.
+- [**iburguer-payments:**](https://github.com/FIAP-G04/iburguer-payments) Representa a API de pagamentos, que gera o QRCode e disponibiliza os webhooks de confirmação e recusa do pagamento.
+- [**iburguer-ordering:**](https://github.com/FIAP-G04/iburguer-ordering) Representa a API de manipulação do Pedido, onde são disponibilizados os endpoints para alterar seu status.
 
 ## Infraestrutura na AWS usando Terraform
 Optamos pela utilização da AWS com provisionamento da infraestrutura como código (IaC) através do Terraform utilizando um pipeline do GitHub Actions para executá-lo. Dividimos a criação do ambiente nos seguintes repositórios:
@@ -244,3 +247,6 @@ Optamos pela utilização da AWS com provisionamento da infraestrutura como cód
 - [**iburguer-eks:**](https://github.com/FIAP-G04/iburguer-eks) Provisiona toda infraestrutura Kubernetes no serviço **Amazon Elastic Kubernetes Service**.
 - [**iburguer-auth:**](https://github.com/FIAP-G04/iburguer-auth) Contém toda infraestrura para o processo de **SignIn** e **SignUp** como **AWS Lambdas**, **Amazon Cognito**, **Amazon API Gateway**.
 - [**iburguer-rds:**](https://github.com/FIAP-G04/iburguer-rds) Provisiona o banco de dados **PostgreSQL** no **Amazon Relational Database Service**.
+
+## Testes de BDD com Specflow
+Foi criado também um novo repositório para concentrar os testes de integração utilizando BDD. Ele está disponível em [**iburguer-test:**](https://github.com/FIAP-G04/iburguer-test)
