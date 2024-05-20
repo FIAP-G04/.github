@@ -130,9 +130,7 @@ Este diagrama visa mostrar o passo à passo do processo de autenticação do cli
 </p>
 
 ## Estrutura de Persistência de Dados
-Decidimos armazenar os dados do **Cliente** diretamente no **Amazon Cognito** e manter os contextos de **Cardápio**, **Pedido**, **Pagamento** e **Carrinho** no **Amazon Relational Database Service**, como parte da estratégia para atender aos requisitos da **FASE 3** do **Tech Challenge**, que exige a separação do contexto do **Cliente** do monolito.
-
-A criação da estrutura de tabelas no RDS foi feito através de Migrations do .NET.
+Cada microsserviço possui seu próprio banco de dados, sendo necessária a replicação de dados em alguns cenários. Optamos por usar bancos de dados distintos para atender às características específicas de cada microsserviço. Entre eles, utilizamos **PostgreSQL**, **Redis** e **MongoDB**.
 
 ### Gestão de Cardápio
 Para o armazenamento do cenário de Cardápio Digital, optamos pela utilização do MongoDB devido a várias características chave que ele possui. Ele oferece um modelo de dados flexível, permitindo fácil alteração de esquemas sem migrações complexas. Sua capacidade de escalabilidade horizontal garante que o sistema suporte um crescimento significativo e mantenha alta performance em operações de leitura e escrita. O MongoDB também permite o armazenamento eficiente de dados complexos com estruturas aninhadas e arrays de forma nativa.
@@ -160,7 +158,7 @@ Segue um exemplo da estrutura de dados armazenada no banco de dados referente a 
 ### Carrinho de Compras
 O Redis é ideal para armazenar dados de carrinhos de compras devido à sua performance rápida, já que é um banco de dados em memória, proporcionando leituras e escritas instantâneas. Suas estruturas de dados ricas e flexíveis permitem armazenar e manipular eficientemente os itens do carrinho. Além disso, Redis oferece persistência transitória com expiração automática de chaves, ideal para gerenciar sessões de carrinho. Sua capacidade de escalabilidade e clusterização facilita a gestão de grandes volumes de dados e usuários simultâneos. Redis também é fácil de integrar com diversas linguagens e frameworks, tornando a implementação rápida e eficiente. 
 
-Segue um exemplo da estrutura de dados armazenada no banco de dados referente a um carrinho de compra:
+Para este cenário optamos por utilizar AWS Elasticache como serviço de Redis. Segue um exemplo da estrutura de dados armazenada no banco de dados referente a um carrinho de compra:
 ```json
 {
    "Id":"209fb1d8-8b00-4d67-a8dd-4cf80a5ccefc",
