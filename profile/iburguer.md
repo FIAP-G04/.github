@@ -113,7 +113,7 @@ Nesta seção utilizaremos o diagrama C4 para representar algumas visões de arq
 </p>
 
 ### Cenário em Microsserviços
-Dividimos o iBurguer em cinco subdomínios distintos, e a separação dos microsserviços seguiu a mesma lógica. Como resultado, temos os seguintes microsserviços:
+Utilizamos a abordagem de divisão de subdomínios mapeadas neste [link](https://github.com/FIAP-G04/.github/blob/main/profile/Domain-Discovery.md#mapeamento-de-dom%C3%ADnios-e-subdom%C3%ADnios) para delimitar a fronteira dos microsserviços criados. Como resultado, temos os seguintes microsserviços:
 
 - Menu API => Gestão de Cardápio
 - Shopping Cart API => Carrinho de compras
