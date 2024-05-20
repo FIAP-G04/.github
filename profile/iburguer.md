@@ -246,7 +246,7 @@ Esse projeto está utilizando as seguintes tecnologias até o momento:
 - [K6](https://k6.io/)
 
 ## Fluxo de Implantação e CI/CD
-Até o momento foram criados **2 repositórios** contendo código fonte e **3 repositórios** de infraestrutura como código (IaC). Todos os repositórios possuem pipelines de CI e CD utilizando GitHub Actions.
+Até o momento foram criados **5 repositórios** contendo código fonte, **1 repositório** de testes BDD e **3 repositórios** de infraestrutura como código (IaC). Todos os repositórios possuem pipelines de CI e CD utilizando GitHub Actions.
 
 - [**iburguer-onboarding:**](https://github.com/FIAP-G04/iburguer-onboarding) Representa o código fonte das **2 lambdas functions** **SignIn** (Identificação do Cliente) e **SignUp** (Registro do Cliente)
 - [**iburguer-menu:**](https://github.com/FIAP-G04/iburguer-menu) Representa a API de gerenciamento do Menu com os itens que podem ser adicionados ao carrinho.
