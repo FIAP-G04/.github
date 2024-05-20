@@ -101,7 +101,12 @@ Após a confirmação do pagamento, o mesmo é enviado para a fila de pedidos. A
 ## Visão Geral da Arquitetura
 Nesta seção utilizaremos o diagrama C4 para representar algumas visões de arquitetura da plataforma **iBurguer**.
 
-### Diagrama de Container
+### Cenário Monolítico
+<p align="center">
+  <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/diagrama-de-container.png" alt="Diagrama de Container">
+</p>
+
+### Cenário em Microsserviços
 Dividimos o iBurguer em cinco subdomínios distintos, e a separação dos microsserviços seguiu a mesma lógica. Como resultado, temos os seguintes microsserviços:
 
 - Menu API => Gestão de Cardápio
@@ -211,6 +216,9 @@ Os dados de cliente estão sendo armazenados no próprio Amazon Cognito.
 <p align="center">
   <img width="120" src="https://github.com/FIAP-G04/.github/blob/main/images/customer.png" alt="Dados de Cliente">
 </p>
+
+## Políticas de Resiliência
+Todas as integrações entre microsserviços possuem mecanismos de **Retry** e **Circuit Breaker**, que foram implementados utilizando a biblioteca **Polly.NET**.
 
 ## Tecnologias Utilizadas
 Esse projeto está utilizando as seguintes tecnologias até o momento:
