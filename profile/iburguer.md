@@ -102,7 +102,14 @@ Após a confirmação do pagamento, o mesmo é enviado para a fila de pedidos. A
 Nesta seção utilizaremos o diagrama C4 para representar algumas visões de arquitetura da plataforma **iBurguer**.
 
 ### Diagrama de Container
-Aqui, a plataforma iBurguer é dividida em contêineres, que podem ser aplicativos, serviços da web, bancos de dados, etc. Cada contêiner é representado como uma caixa e mostra as relações de dependência entre eles.
+Dividimos o iBurguer em cinco subdomínios distintos, e a separação dos microsserviços seguiu a mesma lógica. Como resultado, temos os seguintes microsserviços:
+
+- Menu API => Gestão de Cardápio
+- Shopping Cart API => Carrinho de compras
+- Ordering API => Gestão de Pedidos
+- Payments API => Gestão de Pagamentos
+- SignIn Function => Autenticação do cliente
+- SignUp Function => Registro do cliente
 
 <p align="center">
   <img width="96%" src="https://github.com/FIAP-G04/.github/blob/main/images/iburguer-macro-architecture.png" alt="Diagrama de Container">
