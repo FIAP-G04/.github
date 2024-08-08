@@ -274,9 +274,9 @@ Para visualizar os dados de qualidade de código e cobertura de código [clique 
 </p>
 
 ### Padrão SAGA - Coreografia
-Optamos pelo padrão SAGA coreografado devido à simplicidade e ao tamanho reduzido do nosso sistema, que atualmente consiste em apenas quatro micro serviços. Desses, somente dois propagam eventos de forma significativa. Introduzir um componente adicional de orquestração seria desproporcional à complexidade do cenário, pois adicionaria mais um ponto de manutenção sem oferecer benefícios consideráveis em termos de controle ou simplicidade.
+Optamos pelo padrão SAGA coreografado devido à simplicidade e ao tamanho reduzido do nosso sistema, que atualmente consiste em quatro micro serviços. Entre eles, apenas dois eventos principais são propagados sequencialmente. Introduzir um componente adicional de orquestração para gerenciar esses eventos seria desproporcional à complexidade do cenário, acrescentando um ponto de manutenção desnecessário.
 
-A coreografia, ao permitir que os serviços se comuniquem por meio de eventos, garante um acoplamento fraco, onde cada serviço pode evoluir de forma independente. Isso é especialmente importante em um ambiente onde a escalabilidade e a flexibilidade são prioridades. Além disso, a implementação desse padrão reflete o estado natural e descentralizado das operações atuais, eliminando a necessidade de um orquestrador centralizado que, neste caso, poderia introduzir um ponto único de falha e aumentar a complexidade de manutenção.
+A coreografia permite que os serviços se comuniquem de maneira eficiente e descentralizada por meio de eventos, garantindo um acoplamento fraco. Essa abordagem é ideal para o nosso sistema, onde a escalabilidade e a flexibilidade são prioridades, e onde as operações naturais podem ser facilmente gerenciadas sem a necessidade de um orquestrador centralizado. Além disso, ao evitarmos a criação de um orquestrador, eliminamos um possível ponto único de falha e simplificamos a manutenção do sistema.
 
-Portanto, a escolha pela coreografia não só simplifica o desenvolvimento e a manutenção, como também se alinha perfeitamente à escala e às necessidades específicas do nosso sistema.
+Portanto, a escolha pela coreografia reflete a simplicidade e as necessidades específicas do nosso contexto atual, mantendo o foco na eficiência e na evolução independente dos serviços.
 
