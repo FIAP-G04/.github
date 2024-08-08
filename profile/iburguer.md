@@ -272,3 +272,11 @@ Para visualizar os dados de qualidade de código e cobertura de código [clique 
 <p align="center">
   <img width="100%" src="https://github.com/FIAP-G04/.github/blob/main/images/saga-arquitetura.jpeg" alt="Desenho SAGA">
 </p>
+
+### Padrão SAGA - Coreografia
+Optamos pelo padrão SAGA coreografado devido à simplicidade e ao tamanho reduzido do nosso sistema, que atualmente consiste em apenas quatro micro serviços. Desses, somente dois propagam eventos de forma significativa. Introduzir um componente adicional de orquestração seria desproporcional à complexidade do cenário, pois adicionaria mais um ponto de manutenção sem oferecer benefícios consideráveis em termos de controle ou simplicidade.
+
+A coreografia, ao permitir que os serviços se comuniquem por meio de eventos, garante um acoplamento fraco, onde cada serviço pode evoluir de forma independente. Isso é especialmente importante em um ambiente onde a escalabilidade e a flexibilidade são prioridades. Além disso, a implementação desse padrão reflete o estado natural e descentralizado das operações atuais, eliminando a necessidade de um orquestrador centralizado que, neste caso, poderia introduzir um ponto único de falha e aumentar a complexidade de manutenção.
+
+Portanto, a escolha pela coreografia não só simplifica o desenvolvimento e a manutenção, como também se alinha perfeitamente à escala e às necessidades específicas do nosso sistema.
+
