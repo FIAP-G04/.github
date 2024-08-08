@@ -51,7 +51,7 @@ Os repositórios desta organização têm como objetivo principal o desenvolvime
 - [Fluxo de Implantação e CI/CD](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#fluxo-de-implanta%C3%A7%C3%A3o-e-cicd)
 - [Infraestrutura na AWS usando Terraform](https://github.com/FIAP-G04/.github/blob/main/profile/iburguer.md#infraestrutura-na-aws-usando-terraform)
 - [Sonar](https://github.com/FIAP-G04/.github/edit/main/profile/iburguer.md#sonar)
-- [SAGA](https://github.com/FIAP-G04/.github/edit/main/profile/iburguer.md#saga))
+- [SAGA](https://github.com/FIAP-G04/.github/edit/main/profile/iburguer.md#saga)
 ## Vídeos
 - [Fase 2](https://youtu.be/QVkNK2sfK38)
 - [Fase 3](https://youtu.be/Xz4LOV8k-Mo)
