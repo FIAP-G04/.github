@@ -267,3 +267,8 @@ Foi criado também um novo repositório para concentrar os testes de integraçã
 
 ## Sonar
 Para visualizar os dados de qualidade de código e cobertura de código [clique aqui](https://sonarcloud.io/summary/overall?id=FIAP-G04_iburguer-menu)
+
+## SAGA
+<p align="center">
+  <img width="100%" src="https://github.com/FIAP-G04/.github/blob/main/images/saga-arquitetura.jpeg" alt="Desenho SAGA">
+</p>
